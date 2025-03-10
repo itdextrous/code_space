@@ -1,0 +1,131 @@
+{
+
+	"plans": [
+		{
+			"name": "Wise Edge",
+			"prices": [
+				{
+					"durationInDays": 1,
+					"amountInCents": 899,
+					"recurring": true
+				},
+				{
+					"durationInDays": 7,
+					"amountInCents": 1499,
+					"recurring": true
+				},
+				{
+					"durationInDays": 14,
+					"amountInCents": 1999,
+					"recurring": true
+				},
+				{
+					"durationInDays": 31,
+					"amountInCents": 2573,
+					"recurring": true
+				},
+				{
+					"durationInDays": 3,
+					"amountInCents": 100,
+					"recurring": false
+				}
+			],
+			"features": {
+				"liveInsightsPerGame": 2,
+				"livePredictionPerGame": 2,
+				"maxPredictions": 25,
+				"accumulatorGenerator": 20,
+				"shockDetectors": 5,
+				"cleverLabelling": 20,
+				"historyOfAccumulators": 20,
+				"wiseProHedge": 50,
+				"leagueStatistics": 30,
+				"wiseProIncluded": false
+			}
+		},
+		{
+			"name": "Wise Investor",
+			"prices": [
+				{
+					"durationInDays": 1,
+					"amountInCents": 1499,
+					"recurring": true
+				},
+				{
+					"durationInDays": 7,
+					"amountInCents": 2999,
+					"recurring": true
+				},
+				{
+					"durationInDays": 14,
+					"amountInCents": 3500,
+					"recurring": true
+				},
+				{
+					"durationInDays": 31,
+					"amountInCents": 5177,
+					"recurring": true
+				},
+				{
+					"durationInDays": 3,
+					"amountInCents": 100,
+					"recurring": false
+				}
+			],
+			"features": {
+				"liveInsightsPerGame": 4,
+				"livePredictionPerGame": 3,
+				"maxPredictions": 50,
+				"accumulatorGenerator": 30,
+				"shockDetectors": 15,
+				"cleverLabelling": 40,
+				"historyOfAccumulators": 30,
+				"wiseProHedge": 15,
+				"leagueStatistics": 5,
+				"wiseProIncluded": true
+			}
+		},
+		{
+			"name": "Wise Platinum",
+			"prices": [
+				{
+					"durationInDays": 1,
+					"amountInCents": 2999,
+					"recurring": true
+				},
+				{
+					"durationInDays": 7,
+					"amountInCents": 4499,
+					"recurring": true
+				},
+				{
+					"durationInDays": 14,
+					"amountInCents": 7994,
+					"recurring": true
+				},
+				{
+					"durationInDays": 31,
+					"amountInCents": 12400,
+					"recurring": true
+				},
+				{
+					"durationInDays": 3,
+					"amountInCents": 100,
+					"recurring": false
+				}
+			],
+			"features": {
+				"liveInsightsPerGame": 5,
+				"livePredictionPerGame": 99999,
+				"maxPredictions": 99999,
+				"accumulatorGenerator": 30,
+				"shockDetectors": 99999,
+				"cleverLabelling": 99999,
+				"historyOfAccumulators": 100,
+				"wiseProHedge": 99999,
+				"leagueStatistics": 99999,
+				"wiseProIncluded": true
+			}
+		}
+	]
+}

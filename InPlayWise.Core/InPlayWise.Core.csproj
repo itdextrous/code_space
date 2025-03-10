@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Services\predictGoal.py" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Services\predictGoal.py">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.17.0" />
+    <PackageReference Include="FluentValidation" Version="9.0.1" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.60.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.21" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.21" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="pythonnet" Version="3.0.2" />
+    <PackageReference Include="Stripe.net" Version="42.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InPlayWise.Common\InPlayWise.Common.csproj" />
+    <ProjectReference Include="..\InPlayWise.Data\InPlayWise.Data.csproj" />
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <Compile Update="Services\PredictionService.cs">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+</Project>

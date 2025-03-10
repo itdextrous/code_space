@@ -1,0 +1,37 @@
+blinker
+certifi
+charset-normalizer
+click
+colorama
+filelock
+flask
+fsspec
+idna
+importlib-metadata
+intel-openmp
+itsdangerous
+jinja2
+joblib
+MarkupSafe
+mkl
+mpmath
+# networkx this has to be kept commented
+numpy
+pandas
+python-dateutil
+pytz
+requests
+scikit-learn
+scipy
+six
+sympy
+tbb
+threadpoolctl
+-f https://download.pytorch.org/whl/torch_stable.html
+torch==1.13.0+cpu
+torchvision==0.14.0+cpu
+typing-extensions
+tzdata
+urllib3
+werkzeug
+zipp

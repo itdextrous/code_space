@@ -1,0 +1,466 @@
+[
+  {
+    "Categories": [
+      {
+        "Name": "BasicInfo",
+        "SubCategories": [
+          {
+            "Name": "Category",
+            "Url": "category/list",
+            "Parameters": {}
+          },
+          {
+            "Name": "Country",
+            "Url": "country/list",
+            "Parameters": {}
+          },
+          {
+            "Name": "Competition",
+            "Url": "competition/additional/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Team",
+            "Url": "team/additional/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Player",
+            "Url": "player/with_stat/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Coach",
+            "Url": "coach/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Referee",
+            "Url": "referee/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Venue",
+            "Url": "venue/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Season",
+            "Url": "season/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Stage",
+            "Url": "stage/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "DataUpdate",
+            "Url": "data/update",
+            "Parameters": {}
+          }
+        ]
+      },
+      {
+        "Name": "BasicInfo",
+        "SubCategories": [
+          {
+            "Name": "Category",
+            "Url": "category/list",
+            "Parameters": {}
+          },
+          {
+            "Name": "Country",
+            "Url": "country/list",
+            "Parameters": {}
+          },
+          {
+            "Name": "Competition",
+            "Url": "competition/additional/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Team",
+            "Url": "team/additional/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Player",
+            "Url": "player/with_stat/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Coach",
+            "Url": "coach/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Referee",
+            "Url": "referee/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Venue",
+            "Url": "venue/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Season",
+            "Url": "season/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Stage",
+            "Url": "stage/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "DataUpdate",
+            "Url": "data/update",
+            "Parameters": {}
+          }
+        ]
+      },
+      {
+        "Name": "BasicInfo",
+        "SubCategories": [
+          {
+            "Name": "Category",
+            "Url": "category/list",
+            "Parameters": {}
+          },
+          {
+            "Name": "Country",
+            "Url": "country/list",
+            "Parameters": {}
+          },
+          {
+            "Name": "Competition",
+            "Url": "competition/additional/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Team",
+            "Url": "team/additional/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Player",
+            "Url": "player/with_stat/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Coach",
+            "Url": "coach/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Referee",
+            "Url": "referee/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Venue",
+            "Url": "venue/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Season",
+            "Url": "season/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Stage",
+            "Url": "stage/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "DataUpdate",
+            "Url": "data/update",
+            "Parameters": {}
+          }
+        ]
+      },
+      {
+        "Name": "BasicInfo",
+        "SubCategories": [
+          {
+            "Name": "Category",
+            "Url": "category/list",
+            "Parameters": {}
+          },
+          {
+            "Name": "Country",
+            "Url": "country/list",
+            "Parameters": {}
+          },
+          {
+            "Name": "Competition",
+            "Url": "competition/additional/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Team",
+            "Url": "team/additional/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Player",
+            "Url": "player/with_stat/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Coach",
+            "Url": "coach/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Referee",
+            "Url": "referee/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Venue",
+            "Url": "venue/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Season",
+            "Url": "season/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Stage",
+            "Url": "stage/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "DataUpdate",
+            "Url": "data/update",
+            "Parameters": {}
+          }
+        ]
+      },
+      {
+        "Name": "BasicInfo",
+        "SubCategories": [
+          {
+            "Name": "Category",
+            "Url": "category/list",
+            "Parameters": {}
+          },
+          {
+            "Name": "Country",
+            "Url": "country/list",
+            "Parameters": {}
+          },
+          {
+            "Name": "Competition",
+            "Url": "competition/additional/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Team",
+            "Url": "team/additional/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Player",
+            "Url": "player/with_stat/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Coach",
+            "Url": "coach/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Referee",
+            "Url": "referee/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Venue",
+            "Url": "venue/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Season",
+            "Url": "season/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "Stage",
+            "Url": "stage/list",
+            "Parameters": {
+              "page": "1",
+              "time": "1",
+              "uuid": "123abc"
+            }
+          },
+          {
+            "Name": "DataUpdate",
+            "Url": "data/update",
+            "Parameters": {}
+          }
+        ]
+      }
+    ]
+  }
+]
