@@ -1,0 +1,233 @@
+<table mat-table #table class="tbl_grid" [dataSource]="dataSource" matSort multiTemplateDataRows>
+    <ng-container matColumnDef="arrow">
+        <th mat-header-cell *matHeaderCellDef>
+            <button mat-icon-button *ngIf="this.isCollapse"
+                class="collapsedBtns"
+                matTooltipClass="custom-tooltip"
+                (click)="expandAllNumbers()"
+                matTooltip="{{'QuarterlyPlanningNumberScreen.expandAll' | translate}}">
+                <mat-icon class="mat-icon-rtl-mirror">keyboard_arrow_down</mat-icon>
+            </button>
+            <button mat-icon-button *ngIf="!this.isCollapse"
+                class="collapsedBtns"
+                matTooltipClass="custom-tooltip"
+                (click)="collapseAllNumbers()"
+                matTooltip="{{'QuarterlyPlanningNumberScreen.collapseAll' | translate}}">
+                <mat-icon class="mat-icon-rtl-mirror">keyboard_arrow_up</mat-icon>
+            </button>
+        </th>
+        <td mat-cell *matCellDef="let element">
+            <ng-container *ngIf="element.actionsCount">
+                <button *ngIf="isNumberExpanded(element)" class="collapse_tbaleBtn" mat-icon-button     
+                    [attr.aria-label]="'collapseItem' | translate: { item: element.description }"
+                    (click)="collapseNumber(element)">
+                    <mat-icon class="mat-icon-rtl-mirror">expand_more</mat-icon>
+                </button>
+                <button *ngIf="!isNumberExpanded(element)" class="collapse_tbaleBtn" mat-icon-button     
+                    [attr.aria-label]="'expandItem' | translate: { item: element.description }"
+                    (click)="expandNumber(element)">
+                    <mat-icon class="mat-icon-rtl-mirror">chevron_right</mat-icon>
+                </button>
+            </ng-container>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="actionsCount">
+        <th mat-header-cell *matHeaderCellDef>
+            {{'QuarterlyPlanningNumberScreen.actionsCount' | translate}}
+        </th>
+        <td mat-cell *matCellDef="let element">
+            <span [ngClass]="element.actionsCount ? 'greenColor' : 'lightBlackColor'">
+                {{element.actionsCount}}
+            </span>
+        </td>
+    </ng-container>
+
+    <!-- Trend Column -->
+    <ng-container matColumnDef="trend">
+        <th mat-header-cell *matHeaderCellDef>
+            {{'QuarterlyPlanningNumberScreen.trend' | translate}}
+        </th>
+        <td mat-cell *matCellDef="let element">
+            <div class="editBtn" matTooltip="{{'QuarterlyPlanningNumberScreen.trendGraph' | translate}}"
+                matTooltipClass="custom-tooltip" (click)="showNumberGraph(element)">
+                <i class="fas fa-chart-line"></i> 
+            </div>
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+            <i class="far fa-file-alt"></i>{{'QuarterlyPlanningNumberScreen.description' | translate}}
+        </th>
+        <td mat-cell *matCellDef="let element">
+            <div class="multiline-description">
+                {{element.description}}
+            </div>
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="result">
+        <th mat-header-cell class="qtd-cell" *matHeaderCellDef mat-sort-header arrowPosition="before">
+            {{'QuarterlyPlanningNumberScreen.qtd' | translate}}<br />
+            {{'QuarterlyPlanningNumberScreen.result' | translate}}
+        </th>
+        <td mat-cell *matCellDef="let element">
+            <app-number-result [result]="element.resultToDate" [target]="element.targetToDate"
+                [numberType]="element.type"></app-number-result>
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="target">
+        <th mat-header-cell class="qtd-cell" *matHeaderCellDef mat-sort-header arrowPosition="before">
+            {{'QuarterlyPlanningNumberScreen.qtd' | translate}}<br />
+            {{'QuarterlyPlanningNumberScreen.target' | translate}}
+        </th>
+        <td mat-cell *matCellDef="let element">
+            <app-number-target [target]="element.targetToDate" [numberType]="element.type"></app-number-target>
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="owner">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+            <app-userFilter (parentFun)="applyOwnerFilter($event)" (click)="$event.stopPropagation();"></app-userFilter>
+        </th>
+        <td mat-cell *matCellDef="let element">
+            {{ getUserName(element.owner) }}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="department">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+            {{'QuarterlyPlanningNumberScreen.department' | translate}}
+        </th>
+        <td mat-cell *matCellDef="let element">
+            {{ element.department?.name }}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="captureMethod">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+            {{'QuarterlyPlanningNumberScreen.captureMethod' | translate}}
+        </th>
+        <td mat-cell *matCellDef="let element">
+            {{ getCaptureMethodNameKey(element.captureMethod) | translate }}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="captureFrequency">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+            {{'QuarterlyPlanningNumberScreen.captureFrequency' | translate}}
+        </th>
+        <td mat-cell *matCellDef="let element">
+            {{ getUpdateScheduleDescription(element.scheduleDefinition) }}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="updater">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+            {{'QuarterlyPlanningNumberScreen.updater' | translate}}
+        </th>
+        <td mat-cell *matCellDef="let element">
+            {{ getUserName(element.updater) }}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+            {{'QuarterlyPlanningNumberScreen.status' | translate}}
+        </th>
+        <td mat-cell *matCellDef="let element">
+            {{ getPlanningStatusNameKey(element.numberStatus) | translate }}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="category">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+            {{'QuarterlyPlanningNumberScreen.category' | translate}}
+        </th>
+        <td mat-cell *matCellDef="let element">
+            {{ element.category?.description }}
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef>
+            {{'QuarterlyPlanningNumberScreen.action' | translate}}
+        </th>
+        <td mat-cell *matCellDef="let element">
+            <app-add-edit-delete-menu [element]="element" [dueDateEditable]="false"
+                (updateActionsList)="numberUpdated(element)" [eventType]="'add'" [buttonType]="'rectangle'"
+                [colorType]="actionColorType(element)" [actionFor]="'number'">
+            </app-add-edit-delete-menu>
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="issue">
+        <th mat-header-cell *matHeaderCellDef>
+            <i class="fas fa-exclamation-triangle"></i>
+            {{'QuarterlyPlanningNumberScreen.discuss' | translate}}
+        </th>
+        <td mat-cell *matCellDef="let element">
+            <app-add-issue-button [appDisable]="false" [weekModel]="mapWeekModel(element)" [issueFor]="'number'"
+                [fullData]="mapIssueData(element)" (issueAdded)="numberUpdated(element)">
+            </app-add-issue-button>
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> {{'QuarterlyPlanningNumberScreen.options' |
+            translate}} </th>
+        <td mat-cell *matCellDef="let element">
+            <div class="actions_btns_sec">
+                <app-edit-documents-button [hasAttachments]="element.attachments?.length"
+                    (openDialog)="showNumberAttachments(element)">
+                </app-edit-documents-button>
+
+                <mat-icon [matMenuTriggerFor]="popupMenu" style="cursor: pointer">more_vert</mat-icon>
+                <mat-menu #popupMenu="matMenu" class="iconHolderSec">
+                    <button [appDisable]="false" class="editBtn"
+                        matTooltip="{{'QuarterlyPlanningNumberScreen.editNumber' | translate}}"
+                        matTooltipClass="custom-tooltip" (click)="editNumber(element)">
+                        <i class="fas fa-edit"></i>{{'Edit' | translate}}
+                    </button>
+                    <button [appDisable]="false" class="editBtn"
+                        matTooltip="{{'QuarterlyPlanningNumberScreen.copyNumber' | translate}}"
+                        matTooltipClass="custom-tooltip" (click)="copyNumber(element)">
+                        <i class="fas fa-copy"></i>{{'Copy' | translate}}
+                    </button>
+                    <button [appDisable]="false" isEditPermissionValid="true" class="deleteBtn"
+                        matTooltip="{{'QuarterlyPlanningNumberScreen.deleteNumber' | translate}}"
+                        matTooltipClass="custom-tooltip" (click)="deleteNumber(element)">
+                        <i class="fa fa-trash" aria-hidden="true"></i>{{'Delete' | translate}}
+                    </button>
+                </mat-menu>
+            </div>
+        </td>
+    </ng-container>
+    <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+    <ng-container matColumnDef="expandedDetail">
+        <td mat-cell *matCellDef="let numberItem" [attr.colspan]="displayedColumns.length">
+            <app-child-actions-table 
+                [actions]="numberActions[numberItem.id]" 
+                [parentTableData]="numberItem"
+                [actionFor]="'number'" 
+                [isEditable]="isEditable" 
+                (reloadParentItem)="numberUpdated(numberItem)"
+                (reloadActionList)="getChildActions(numberItem)"
+                *ngIf="isNumberExpanded(numberItem) && numberActions[numberItem.id]?.length"
+                @detailExpand>
+            </app-child-actions-table>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="detail-row"></tr>
+    <tr class="mat-row" *matNoDataRow>
+        <td [attr.colSpan]="displayedColumns.length">
+            <span class="no-records">
+                {{'NoRecordsFound.noRecordsFound!' | translate}}
+            </span>
+        </td>
+    </tr>
+</table>

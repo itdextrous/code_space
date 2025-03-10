@@ -1,0 +1,35 @@
+@import "src/app/material-component/dialogs/_dialog-common-css/dialog.component.scss";
+
+app-recurrence-control {
+    width: 100%;
+}
+
+h4.week-target-title {
+    font-weight: bold;
+    font-size: 15px !important;
+    margin-bottom: 0;
+}
+
+.week-targets-container {
+    display: flex;
+    max-width: 100%;
+
+    .week-target {
+        flex: 0 1 auto;
+        max-width: 60px;
+        min-width: 40px;
+    }
+
+    .week-target + .week-target {
+        margin-left: 10px;
+    }
+}
+
+input[type=number].target {
+    -moz-appearance: textfield;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        display: none;
+    }
+}

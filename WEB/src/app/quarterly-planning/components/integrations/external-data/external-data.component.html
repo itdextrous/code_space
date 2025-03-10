@@ -1,0 +1,28 @@
+<div class="row" >
+    <div class="col-sm-5">
+        <mat-form-field>
+            <mat-label>{{ 'QuarterlyPlanningNumberScreen.externalData' | translate }}</mat-label>
+            <mat-select disableOptionCentering [formControl]="retrieverInfoControl">
+                <mat-option [value]="null">
+                </mat-option>
+                <mat-option *ngFor="let externalRetrieverKey of externalRetrieversEnabled" [value]="externalRetrieverKey">
+                    {{ getExternalRetrieverKey(externalRetrieverKey) | translate }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+
+    <div class="col-sm-4" *ngIf="retrieveInfoType == 'xeroCashInBankAccountRetriever'">
+        <app-xero-bank-account-selector [formControl]="xeroAccountControl"></app-xero-bank-account-selector>
+    </div>
+
+    <div class="col-sm-3" *ngIf="externalDataSelected">
+        <mat-form-field>
+            <mat-label>{{ 'QuarterlyPlanningNumberScreen.externalDataSchedule' | translate }}</mat-label>
+            <app-time-picker [intervalMins]="30" [formControl]="scheduleControl" required></app-time-picker>
+            <mat-error *ngIf="scheduleControl.errors?.required">
+                {{ 'QuarterlyPlanningNumberScreen.externalDataScheduleRequired' | translate }}
+            </mat-error>
+        </mat-form-field>
+    </div>
+</div>

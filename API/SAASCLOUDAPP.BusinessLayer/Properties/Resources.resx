@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ActionAndSolutionBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\ActionAndSolution.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActionAndSolutionSubject" xml:space="preserve">
+    <value>Action And Solution Details</value>
+  </data>
+  <data name="ActionsDueInNextOneDayBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\ActionsDueInNextOneDay.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActionsDueInNextOneDaySubject" xml:space="preserve">
+    <value>Action(s) due in 1 day</value>
+  </data>
+  <data name="ActionsDueInNextTwoDaysBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\ActionsDueInNextTwoDays.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ActionsDueInNextTwoDaysSubject" xml:space="preserve">
+    <value>Action(s) due in 2 days</value>
+  </data>
+  <data name="AddedString" xml:space="preserve">
+    <value>Added</value>
+  </data>
+  <data name="AddNewIssueBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\AddNewIssue.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AddNewIssueSubject" xml:space="preserve">
+    <value>New issue added</value>
+  </data>
+  <data name="AddNewPartnerInstanceBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\AddNewPartnerInstance.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AddNewPartnerInstanceSubject" xml:space="preserve">
+    <value>Your Workfacta partner account is ready.</value>
+  </data>
+  <data name="AddNewSuggestionBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\AddNewSuggestion.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AddNewSuggestionSubject" xml:space="preserve">
+    <value>Workfacta - You have a new suggestion.</value>
+  </data>
+  <data name="AddUpdateMultipleIssuesBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\AddUpdateMultipleIssues.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AddUpdateMultipleIssuesSubject" xml:space="preserve">
+    <value>New issue added</value>
+  </data>
+  <data name="AppUpdateNotificationBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\AppUpdateNotification.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AppUpdateNotificationSubject" xml:space="preserve">
+    <value>Updated App Notification</value>
+  </data>
+  <data name="AverageString" xml:space="preserve">
+    <value>Average</value>
+  </data>
+  <data name="ChallengeSolvedSubject" xml:space="preserve">
+    <value>Challenge Solved</value>
+  </data>
+  <data name="ChallengesString" xml:space="preserve">
+    <value>Challenges</value>
+  </data>
+  <data name="ChallengeString" xml:space="preserve">
+    <value>Challenge</value>
+  </data>
+  <data name="ChallengeUpdatedSubject" xml:space="preserve">
+    <value>Challenge Updated</value>
+  </data>
+  <data name="CreatedString" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="DiscussionSolvedSubject" xml:space="preserve">
+    <value>Discussion Solved</value>
+  </data>
+  <data name="DiscussionsString" xml:space="preserve">
+    <value>Discussions</value>
+  </data>
+  <data name="DiscussionString" xml:space="preserve">
+    <value>Discussion</value>
+  </data>
+  <data name="DiscussionUpdatedSubject" xml:space="preserve">
+    <value>Discussion Updated</value>
+  </data>
+  <data name="emailconfirmationBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\emailconfirmation.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EmailConfirmationSubject" xml:space="preserve">
+    <value>Workfacta Email Confirmation</value>
+  </data>
+  <data name="GenericIssuesString" xml:space="preserve">
+    <value>Opportunities, Challenges and Discussions</value>
+  </data>
+  <data name="GenericIssueUpdatedSubject" xml:space="preserve">
+    <value>Opportunities, Challenges and Discussions Updated</value>
+  </data>
+  <data name="InfoGramTemplateBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\InfoGramTemplate.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InfoGramTemplateSubject" xml:space="preserve">
+    <value>Annual Planning - Summary</value>
+  </data>
+  <data name="InviteUserBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\InviteUser.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InviteUserSubject" xml:space="preserve">
+    <value>Workfacta Invitation</value>
+  </data>
+  <data name="InviteUserWithResetPasswordLinkBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\InviteUserWithResetPasswordLink.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="InviteUserWithResetPasswordLinkSubject" xml:space="preserve">
+    <value>Your Workfacta account is ready.</value>
+  </data>
+  <data name="ManagementNotificationLateUpdatesBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\ManagementNotificationLateUpdates.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ManagementNotificationLateUpdatesLineManagerBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\ManagementNotificationLateUpdatesLineManager.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ManagementNotificationLateUpdatesSubject" xml:space="preserve">
+    <value>Management Notification Late Updates</value>
+  </data>
+  <data name="MeetingCancelEmailBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\MeetingCancelEmail.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MeetingCancelEmailSubject" xml:space="preserve">
+    <value>Meeting Cancelled</value>
+  </data>
+  <data name="MeetingPostponeEmailBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\MeetingPostponeEmail.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MeetingPostponeEmailSubject" xml:space="preserve">
+    <value>Meeting Moved</value>
+  </data>
+  <data name="MeetingRemindersWithOverduesBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\MeetingRemindersWithOverdues.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MeetingRemindersWithOverduesSubject" xml:space="preserve">
+    <value>Overdue Update Reminder</value>
+  </data>
+  <data name="MeetingUpdateReminderBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\MeetingUpdateReminder.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MeetingUpdateReminderSubject" xml:space="preserve">
+    <value>Update Reminder</value>
+  </data>
+  <data name="MinutesOfMeetingEmailBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\MinutesOfMeetingEmail.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MinutesOfMeetingEmailSubject" xml:space="preserve">
+    <value>Minutes Of Meeting</value>
+  </data>
+  <data name="MondayNonUpdatedReminderBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\MondayNonUpdatedReminder.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MondayNonUpdatedReminderSubject" xml:space="preserve">
+    <value>Regarding Non-Updated Data</value>
+  </data>
+  <data name="MultipleActionAddUpdateBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\MultipleActionAddUpdate.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="MultipleActionAddUpdateSubject" xml:space="preserve">
+    <value>New action added updated</value>
+  </data>
+  <data name="NewActionAddUpdateBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\NewActionAddUpdate.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="NewActionAddUpdateSubject" xml:space="preserve">
+    <value>New action added updated</value>
+  </data>
+  <data name="NewChallengeCreatedSubject" xml:space="preserve">
+    <value>New Challenge created</value>
+  </data>
+  <data name="NewDiscussionCreatedSubject" xml:space="preserve">
+    <value>New Discussion Created</value>
+  </data>
+  <data name="NewGenericIssueCreatedSubject" xml:space="preserve">
+    <value>New Opportunities, Challenges and Discussions Created</value>
+  </data>
+  <data name="NewOpportunityCreatedSubject" xml:space="preserve">
+    <value>New Opportunity created</value>
+  </data>
+  <data name="NewsEmail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\NewsEmail.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="OpportunitiesString" xml:space="preserve">
+    <value>Opportunities</value>
+  </data>
+  <data name="OpportunityChallengeSolvedBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\OpportunityChallengeSolved.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="OpportunitySolvedSubject" xml:space="preserve">
+    <value>Opportunity Solved</value>
+  </data>
+  <data name="OpportunityString" xml:space="preserve">
+    <value>Opportunity</value>
+  </data>
+  <data name="OpportunityUpdatedSubject" xml:space="preserve">
+    <value>Opportunity Updated</value>
+  </data>
+  <data name="PaymentSuccessFailedBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\PaymentSuccessFailed.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PrintMeetingPDFBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\PrintMeetingPDF.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="PrintMeetingPDFSubject" xml:space="preserve">
+    <value>Meeting Agenda</value>
+  </data>
+  <data name="ReportUpdatedEmail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\ReportUpdatedEmail.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ResetPasswordBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\ResetPassword.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="ResetPasswordSubject" xml:space="preserve">
+    <value>Reset Password</value>
+  </data>
+  <data name="ResultString" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="SubscriptionUpdateFailedSubject" xml:space="preserve">
+    <value>Subscription Update Failed</value>
+  </data>
+  <data name="SystemEmailBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\SystemEmail.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="TargetString" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <data name="UpdatedString" xml:space="preserve">
+    <value>Updated</value>
+  </data>
+  <data name="UpdateIssueBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\UpdateIssue.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="UpdateIssueSubject" xml:space="preserve">
+    <value>issue updated</value>
+  </data>
+  <data name="WeeklyUpdateReportEmailBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Emails\WeeklyUpdateReportEmail.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="WeeklyUpdateReportEmailSubject" xml:space="preserve">
+    <value>Weekly Update Report</value>
+  </data>
+  <data name="WeekString" xml:space="preserve">
+    <value>Week</value>
+  </data>
+</root>

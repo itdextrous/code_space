@@ -1,0 +1,47 @@
+<div class="ticker_sec top_row">
+    <app-quarter-selector [companyId]="companyId$ | async" (selectedQuarterChange)="quarter = $event">
+    </app-quarter-selector>
+    <span class="qtr_status" [appDisable]="false">
+        {{'QuarterlyPlanningNumberScreen.status' | translate}}:
+        <mat-slide-toggle [ngModel]="isCommitted" (ngModelChange)="setCommittedStatus($event)"
+            [disabled]="!canEditStatus">
+            {{ isCommitted ? "Committed" : "Draft" | translate }}
+        </mat-slide-toggle>
+    </span>
+</div>
+<div class="main_content">
+    <div class="header-row">
+        <h2 class="main_heading" [appDisable]="false">
+            {{'QuarterlyPlanningNumberScreen.numbers' | translate}}
+            <button (click)="informationDialog()">
+                <span class="circle_bx info "><i class="fas fa-question"></i></span>
+            </button>
+
+            <span class="pageSubHeading">
+                <button mat-mini-fab class="create-button" (click)="addNumber()">
+                    <mat-icon svgIcon="wf-add"></mat-icon>
+                </button>
+                <span class="create-button-label">{{'QuarterlyPlanningNumberScreen.setupNumber' | translate}}</span>
+            </span>
+        </h2>
+
+        <div class="button-bar" *ngIf="!isLoading && !hasFailed">
+            <button type="button" mat-icon-button (click)="refresh()" color="accent" [title]="'refresh' | translate">
+                <mat-icon>refresh</mat-icon>
+            </button>
+        </div>
+    </div>
+
+    <app-error-card *ngIf="hasFailed" (retry)="refresh()"
+        [message]="'QuarterlyPlanningNumberScreen.loadFailed' | translate">
+    </app-error-card>
+
+    <div class="wht_bgbx" *ngIf="!hasFailed && !!numbers">
+        <div class="tblGrid">
+            <div class="hor_table">
+                <app-numbers-table [numbers]="numbers" (numberEvent)="handleNumberEvent($event)">
+                </app-numbers-table>
+            </div>
+        </div>
+    </div>
+</div>

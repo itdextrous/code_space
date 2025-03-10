@@ -1,0 +1,55 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "baseUrl": "./",
+        "outDir": "./dist/out-tsc",
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "sourceMap": true,
+        "declaration": false,
+        "downlevelIteration": true,
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "importHelpers": true,
+        "target": "es2015",
+        "module": "es2020",
+        "lib": [
+            "es2018",
+            "dom"
+        ],
+        "paths": {
+            "@api": [
+                "src/api"
+            ],
+            "@api/*": [
+                "src/api/*"
+            ],
+            "~shared/*": [
+                "src/app/shared/*"
+            ],
+            "~dashboard/*": [
+                "src/app/dashboard/*"
+            ],
+            "~repositories": [
+                "src/app/repositories"
+            ],
+            "~repositories/*": [
+                "src/app/repositories/*"
+            ],
+            "~services/*": [
+                "src/app/services/*"
+            ],
+            "~/*": [
+                "src/*"
+            ],
+        }
+    },
+    "angularCompilerOptions": {
+        "strictInjectionParameters": true,
+        "strictInputAccessModifiers": true,
+        "enableIvy": true,
+        "fullTemplateTypeCheck": true
+    }
+}

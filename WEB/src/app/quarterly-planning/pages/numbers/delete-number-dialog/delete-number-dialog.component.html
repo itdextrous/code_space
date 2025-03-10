@@ -1,0 +1,27 @@
+<div class="pages-div">
+    <div class="close_btn">
+        <a (click)="close()"> <i class="far fa-times-circle"></i> </a>
+    </div>
+
+    <div class="row">
+        <p class="col-xs-12">
+            {{ 'QuarterlyPlanningNumberScreen.deleteConfirmation' | translate: { description: description } }}
+        </p>
+    </div>
+
+    <div class="row" *ngIf="isRecurring">
+        <p class="col-xs-12">
+            {{ 'QuarterlyPlanningNumberScreen.deleteRecurringNote' | translate: { description: description } }}
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 text-right">
+            <div class="form-group form_btn form_btn_div">
+                <app-status-button type="submit" [state]="buttonState" (buttonClick)="delete()">
+                    {{ "Delete" | translate }}
+                </app-status-button>
+            </div>
+        </div>
+    </div>
+</div>

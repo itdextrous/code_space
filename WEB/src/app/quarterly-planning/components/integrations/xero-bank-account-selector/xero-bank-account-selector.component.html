@@ -1,0 +1,14 @@
+<mat-form-field [appDisable]="isLoading">
+    <mat-label *ngIf="!isLoading">{{ "externalData.xeroBankAccount" | translate }}</mat-label>
+    <mat-label *ngIf="isLoading">{{ "externalData.loadingText" | translate }}
+        <img *ngIf="this.buttonIconImg" src="{{ this.buttonIconImg }}" alt="loader" height="10" width="10" />
+    </mat-label>
+    <mat-select disableOptionCentering [formControl]="bankAccountControl" required>
+        <mat-option *ngFor="let bankAccount of bankAccounts" [value]="bankAccount.id">
+            {{ bankAccount.name }}
+        </mat-option>
+    </mat-select>
+    <mat-error *ngIf="bankAccountControl.errors?.required">
+        {{ 'externalData.xeroBankAccountRequired' | translate }}
+    </mat-error>
+</mat-form-field>

@@ -1,0 +1,22 @@
+h2.main_heading {
+    margin-top: 7px;
+}
+
+.qtr_status {
+    vertical-align: middle;
+}
+
+.header-row {
+    display: flex;
+    align-items: baseline;
+
+    & > * {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .button-bar {
+        flex-grow: 1;
+        text-align: right;
+    }
+}

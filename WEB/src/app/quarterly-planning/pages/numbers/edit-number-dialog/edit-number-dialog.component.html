@@ -1,0 +1,266 @@
+<div class="pages-div">
+    <div class="close_btn">
+        <a (click)="close()"> <i class="far fa-times-circle"></i> </a>
+    </div>
+    <h4>{{ 'QuarterlyPlanningNumberScreen.number' | translate }}</h4>
+    <form [formGroup]="form" (submit)="save()" class="input_height">
+        <div class="row">
+            <div class="col-sm-10">
+                <mat-form-field>
+                    <mat-label>{{ 'QuarterlyPlanningNumberScreen.description' | translate }}</mat-label>
+                    <textarea matInput type="text" formControlName="description" autocomplete="off" maxlength="250"
+                        required cdkTextareaAutosize cdkAutosizeMinRows="2">
+                    </textarea>
+                    <mat-error *ngIf="descriptionControl.errors?.required">
+                        {{ 'QuarterlyPlanningNumberScreen.descriptionRequired' | translate }}
+                    </mat-error>
+                    <mat-error *ngIf="descriptionControl.errors?.maxlength">
+                        {{
+                        'QuarterlyPlanningNumberScreen.descriptionMaxLength' |
+                        translate: descriptionControl.errors?.maxlength
+                        }}
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div class="col-sm-2">
+                <mat-form-field>
+                    <mat-label>{{ 'QuarterlyPlanningNumberScreen.qtr' | translate }}</mat-label>
+                    <input matInput type="number" formControlName="quarter" autocomplete="off" [min]="minQuarter"
+                        max="4" required (keypress)="filterNonNumeric($event)" />
+                    <mat-error *ngIf="!quarterControl.valid">
+                        {{ 'QuarterlyPlanningNumberScreen.qtrRequired' | translate }}
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <mat-form-field>
+                    <mat-label>{{ 'QuarterlyPlanningNumberScreen.desiredResult' | translate }}</mat-label>
+                    <mat-select disableOptionCentering formControlName="targetType">
+                        <mat-option *ngFor="let target of targetTypes" [value]="target">
+                            {{ getNumberTargetTypeNameKey(target) | translate }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-sm-4" *ngIf="hasLowerTarget">
+                <mat-form-field>
+                    <mat-label>
+                        {{
+                        (
+                        hasUpperTarget ?
+                        'QuarterlyPlanningNumberScreen.targetLow' :
+                        'QuarterlyPlanningNumberScreen.target'
+                        ) | translate
+                        }}
+                    </mat-label>
+                    <input matInput type="number" formControlName="targetLowerBound" class="target"
+                        autocomplete="off" />
+                </mat-form-field>
+            </div>
+            <div class="col-sm-4" *ngIf="hasUpperTarget">
+                <mat-form-field>
+                    <mat-label>
+                        {{
+                        (
+                        hasLowerTarget ?
+                        'QuarterlyPlanningNumberScreen.targetHigh' :
+                        'QuarterlyPlanningNumberScreen.target'
+                        ) | translate
+                        }}
+                    </mat-label>
+                    <input matInput type="number" formControlName="targetUpperBound" class="target"
+                        autocomplete="off" />
+                    <mat-error *ngIf="targetUpperBoundControl.errors?.greaterThan">
+                        {{ 'QuarterlyPlanningNumberScreen.errorTargetMustBeHigher' | translate }}
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                    <mat-checkbox formControlName="allowWeeklyTargets">
+                        {{ 'QuarterlyPlanningNumberScreen.setForEachWeek' | translate }}
+                    </mat-checkbox>
+                </div>
+                <div *ngIf="supportsEnteringDeltas">
+                    <mat-checkbox formControlName="enteringTotals">
+                        {{ 'QuarterlyPlanningNumberScreen.enteringTotals' | translate }}
+                    </mat-checkbox>
+                </div>
+                <div>
+                    <mat-checkbox formControlName="isRecurring">
+                        {{ 'QuarterlyPlanningNumberScreen.recurringNumber' | translate }}
+                    </mat-checkbox>
+                </div>
+            </div>
+        </div>
+
+        <ng-container *ngIf="allowWeeklyTargetsControl.value">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4 class="week-target-title">{{ 'QuarterlyPlanningNumberScreen.weeklyTargetTitle' | translate }}
+                    </h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 week-targets-container" formArrayName="weekTargets">
+                    <div class="week-target" *ngFor="let week of weeks; let i=index" [formGroupName]="i">
+                        <div *ngIf="hasUpperTarget">
+                            <mat-form-field [floatLabel]="upperTargetSet ? 'always' : 'auto'" appearance="standard">
+                                <mat-label>
+                                    {{ 'QuarterlyPlanningNumberScreen.weekTarget' | translate: { week: week } }}
+                                </mat-label>
+                                <input matInput type="number" [formControl]="weekTargetsControl.at(i).get('upper')" class="target"
+                                    [placeholder]="targetUpperBoundControl.value?.toString()" autocomplete="off" />
+                                <mat-hint *ngIf="hasLowerTarget">
+                                    {{ 'QuarterlyPlanningNumberScreen.high' | translate }}
+                                </mat-hint>
+                                <mat-error *ngIf="weekTargetsControl.at(i).get('upper')?.errors?.greaterThan">
+                                    {{ 'QuarterlyPlanningNumberScreen.errorTargetInvalid' | translate }}
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div *ngIf="hasLowerTarget">
+                            <mat-form-field [floatLabel]="lowerTargetSet ? 'always' : 'auto'" appearance="standard">
+                                <mat-label>
+                                    {{ 'QuarterlyPlanningNumberScreen.weekTarget' | translate: { week: week } }}
+                                </mat-label>
+                                <input matInput type="number" [formControl]="weekTargetsControl.at(i).get('lower')" class="target"
+                                    [placeholder]="targetLowerBoundControl.value?.toString()" autocomplete="off" />
+                                <mat-hint *ngIf="hasUpperTarget">
+                                    {{ 'QuarterlyPlanningNumberScreen.low' | translate }}
+                                </mat-hint>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+
+        <div class="row">
+            <div class="col-sm-5">
+                <mat-form-field>
+                    <mat-label>{{ 'QuarterlyPlanningNumberScreen.numberType' | translate }}</mat-label>
+                    <mat-select disableOptionCentering formControlName="numberType" required>
+                        <mat-option *ngFor="let type of numberTypes" [value]="type">
+                            {{ getNumberTypeNameKey(type) | translate }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-sm-7">
+                <mat-form-field>
+                    <mat-label>{{ 'QuarterlyPlanningNumberScreen.owner' | translate }}</mat-label>
+                    <app-auto-select formControlName="owner" required [options]="users$ | async"
+                        [optionValueFunc]="getUserId" [optionDisplayFunc]="getUserName"></app-auto-select>
+                    <mat-error *ngIf="ownerControl.errors?.required">
+                        {{ 'QuarterlyPlanningNumberScreen.ownerRequired' | translate }}</mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Capture Frequency -->
+            <div class="col-sm-5">
+                <mat-form-field>
+                    <mat-label>{{ "updateScheduleType.title" | translate }}</mat-label>
+                    <mat-select [formControl]="scheduleTypeControl" required>
+                        <mat-option *ngFor="let t of updateScheduleTypeOptions" [value]="t">
+                            {{ getUpdateScheduleTypeNameKey(t) | translate }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div class="col-sm-7">
+                <mat-form-field>
+                    <mat-label>{{ 'QuarterlyPlanningNumberScreen.updater' | translate }}</mat-label>
+                    <app-auto-select formControlName="updater" required [options]="users$ | async"
+                        [optionValueFunc]="getUserId" [optionDisplayFunc]="getUserName"></app-auto-select>
+                    <mat-error *ngIf="updaterControl.errors?.required">
+                        {{ 'QuarterlyPlanningNumberScreen.required' | translate }}
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+
+        <app-recurrence-control *ngIf="hasRecurrence" [formControl]="recurrenceControl" required>
+        </app-recurrence-control>
+
+        <div class="row">
+            <div class="col-sm-5">
+                <mat-form-field>
+                    <mat-label>{{ 'QuarterlyPlanningNumberScreen.captureMethod' | translate }}</mat-label>
+                    <mat-select disableOptionCentering formControlName="captureMethod" required>
+                        <mat-option *ngFor="let c of captureMethods" [value]="c">
+                            {{ getCaptureMethodNameKey(c) | translate }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div class="col-sm-7">
+                <mat-form-field>
+                    <mat-label>{{ 'QuarterlyPlanningNumberScreen.department' | translate }}</mat-label>
+                    <mat-select disableOptionCentering formControlName="department">
+                        <mat-option *ngFor="let department of departments$ | async" [value]="department.Id">
+                            {{ department.DepartmentName }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        
+        <!-- If capture method is automatic then allow configuring the external data -->
+        <app-external-data *ngIf="captureMethodIsAutomatic" formControlName="externalData"></app-external-data>
+
+        <div class="row">
+            <div class="col-sm-5">
+                <mat-form-field>
+                    <mat-label>{{ 'QuarterlyPlanningNumberScreen.numberStatus' | translate }}</mat-label>
+                    <mat-select disableOptionCentering formControlName="numberStatus" required>
+                        <mat-option *ngFor="let status of planningStatuses" [value]="status">
+                            {{ getPlanningStatusNameKey(status) | translate }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <ng-container *ngIf="categories$ | async; let categories">
+                <div class="col-sm-7" *ngIf="categories.length">
+                    <mat-form-field>
+                        <mat-label>{{ 'QuarterlyPlanningNumberScreen.category' | translate }}</mat-label>
+                        <app-auto-select formControlName="category" [options]="categories"
+                            [optionValueFunc]="getCategoryId" [optionDisplayFunc]="getCategoryDisplay">
+                        </app-auto-select>
+                    </mat-form-field>
+                </div>
+            </ng-container>
+            <ng-container *ngIf="subCategories$ | async; let subCategories">
+                <div class="col-sm-5" *ngIf="subCategories.length">
+                    <mat-form-field>
+                        <mat-label>{{ 'QuarterlyPlanningNumberScreen.subCategory' | translate }}</mat-label>
+                        <app-auto-select formControlName="subCategory" [options]="subCategories"
+                            [optionValueFunc]="getSubCategoryId" [optionDisplayFunc]="getSubCategoryDisplay" required>
+                        </app-auto-select>
+                        <mat-error *ngIf="subCategoryControl.errors?.required">
+                            {{ 'QuarterlyPlanningNumberScreen.subCategoryRequired' | translate }}
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </ng-container>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 text-right">
+                <div class="form-group form_btn form_btn_div">
+                    <app-status-button type="submit" [state]="buttonState">
+                        {{ "Save" | translate }}
+                    </app-status-button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

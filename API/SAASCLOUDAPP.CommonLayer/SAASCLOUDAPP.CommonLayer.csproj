@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{824B798D-EF4B-4D1D-BE87-71C7F673B6A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SAASCLOUDAPP.CommonLayer</RootNamespace>
+    <AssemblyName>SAASCLOUDAPP.CommonLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <CodeAnalysisRuleSet>..\SAASCLOUDAPP.API\NetFramework.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enums\CheckoutSessionStatus.cs" />
+    <Compile Include="Models\MeetingReminderModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\ActionsVM.cs" />
+    <Compile Include="ViewModels\AttachmentVm.cs" />
+    <Compile Include="ViewModels\CancelAndPostponeMeetingVM.cs" />
+    <Compile Include="ViewModels\ClientInstanceVM.cs" />
+    <Compile Include="ViewModels\CommonGetDataDTO.cs" />
+    <Compile Include="ViewModels\CompanySubscriptionDetailsVm.cs" />
+    <Compile Include="ViewModels\CompanyTeamNumberDto.cs" />
+    <Compile Include="ViewModels\CompanyTreeVm.cs" />
+    <Compile Include="ViewModels\CustomDashboardVM.cs" />
+    <Compile Include="ViewModels\DateFormatPreferencesVM.cs" />
+    <Compile Include="ViewModels\GetEventHistoryDTO.cs" />
+    <Compile Include="ViewModels\HirePlanVM.cs" />
+    <Compile Include="ViewModels\IAttachmentHolder.cs" />
+    <Compile Include="ViewModels\NewsVM.cs" />
+    <Compile Include="ViewModels\PartnerConfigTemplateVM.cs" />
+    <Compile Include="ViewModels\PartnerDataVM.cs" />
+    <Compile Include="ViewModels\PartnersCompanyVM.cs" />
+    <Compile Include="ViewModels\PaymentVM.cs" />
+    <Compile Include="ViewModels\PlanningAttachmentsVm.cs" />
+    <Compile Include="ViewModels\PlanningSessionVM.cs" />
+    <Compile Include="ViewModels\ResponseVM.cs" />
+    <Compile Include="ViewModels\ScoreVM.cs" />
+    <Compile Include="ViewModels\SendInfoGramEmailVM.cs" />
+    <Compile Include="ViewModels\CommonStatusVM.cs" />
+    <Compile Include="ViewModels\CompanyVM.cs" />
+    <Compile Include="ViewModels\DepartmentVM.cs" />
+    <Compile Include="ViewModels\GoalStatusVM.cs" />
+    <Compile Include="ViewModels\GoalsVM.cs" />
+    <Compile Include="ViewModels\GoalWeeklyRecordVM.cs" />
+    <Compile Include="ViewModels\IssuesVM.cs" />
+    <Compile Include="ViewModels\MeetingVM.cs" />
+    <Compile Include="ViewModels\NumbersVM.cs" />
+    <Compile Include="ViewModels\NumbersWeeklyRecordVM.cs" />
+    <Compile Include="ViewModels\RegistrationVM.cs" />
+    <Compile Include="ViewModels\StripeProductRequirementVm.cs" />
+    <Compile Include="ViewModels\StripeProductDetailVm.cs" />
+    <Compile Include="ViewModels\StripeProductVm.cs" />
+    <Compile Include="ViewModels\SubCategoryVM.cs" />
+    <Compile Include="ViewModels\TeamsVM.cs" />
+    <Compile Include="ViewModels\TimeZoneViewModel.cs" />
+    <Compile Include="ViewModels\UpdateScheduleVm.cs" />
+    <Compile Include="ViewModels\UserNotesVM.cs" />
+    <Compile Include="ViewModels\WorkCategoryVM.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\SAASCLOUDAPP.API\Main.ruleset">
+      <Link>Main.ruleset</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

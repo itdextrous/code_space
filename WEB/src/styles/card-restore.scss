@@ -1,0 +1,21 @@
+/* mat-card is used in some unusual places in the app, so the styles are heavily overwritten.
+   Until these instances can be removed, this file can be included in a component to reset to default styles. */
+.mat-card {
+    padding: 16px !important;
+    margin: 0;
+
+    .mat-card-header {
+        padding: 0;
+        border-radius: 0;
+
+        .mat-card-title {
+            margin-bottom: 12px;
+        }
+    }
+
+    .mat-card-content {
+        font-size: 14px;
+        line-height: initial;
+        padding: 0;
+    }
+}

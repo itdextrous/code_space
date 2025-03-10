@@ -1,0 +1,111 @@
+table {
+    width: 100%;
+}
+
+.mat-cell,
+.mat-header-cell {
+    font-size: 11px;
+}
+
+@mixin column-reset() {
+    min-width: 0;
+    text-align: left;
+}
+
+@mixin column-width($width) {
+    min-width: $width;
+    max-width: $width;
+    width: $width;
+}
+
+.mat-column-arrow {
+    @include column-width(60px);
+    mat-icon {
+        color: rgba(0, 0, 0, 0.87);
+    }
+}
+
+.mat-column-actionsCount {
+    @include column-width(60px);
+    text-align: center;
+}
+
+.mat-column-trend {
+    @include column-width(80px);
+}
+
+.mat-column-description {
+    font-weight: bold;
+}
+.mat-column-result,
+.mat-column-target {
+    text-align: right;
+    padding-right: 5px;
+}
+.mat-column-owner,
+.mat-column-updater {
+    padding-left: 5px;
+}
+
+.mat-column-department,
+.mat-column-category {
+    padding-left: 5px;
+}
+.mat-column-action {
+    @include column-reset();
+    @include column-width(80px);
+}
+
+.mat-column-issue {
+    @include column-reset();
+    @include column-width(120px);
+}
+
+.mat-column-captureMethod {
+    @include column-width(80px);
+}
+
+.mat-column-captureFrequency {
+    max-width: 120px;
+}
+
+.mat-column-status {
+    @include column-reset();
+    text-align: center;
+}
+
+.mat-column-actions {
+    @include column-width(90px);
+    text-align: right;
+}
+
+.mat-column-actionsCount span {
+    width: 20px;
+    display: flex;
+    height: 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.mat-column-status .mat-sort-header-container {
+    justify-content: center;
+}
+
+.detail-row {
+    height: 0;
+    border: none;
+    > td {
+        border: none;
+        padding: 0;
+    }
+}
+
+app-userFilter {
+    text-align: left;
+    min-width: 120px;
+}

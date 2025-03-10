@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <IsWebJobProject>true</IsWebJobProject>
+    <WebJobName>$(AssemblyName)</WebJobName>
+    <WebJobType>Continuous</WebJobType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNet.Identity.MongoDB" Version="2.0.8" />
+    <PackageReference Include="AutoMapper" Version="4.2.1" />
+    <PackageReference Include="Azure.Storage.Queues" Version="12.7.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.NLogTarget" Version="2.17.0" />
+    <PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.1" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions" Version="4.0.1" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Storage" Version="4.0.4" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Logging.ApplicationInsights" Version="3.0.25" />
+    <PackageReference Include="Microsoft.Configuration.ConfigurationBuilders.AzureAppConfiguration" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Configuration.ConfigurationBuilders.Environment" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Web.WebJobs.Publish" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Microsoft.WindowsAzure.ConfigurationManager" Version="3.2.1" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Core" Version="3.0.25" />    
+    <PackageReference Include="Microsoft.Azure.WebJobs" Version="3.0.25" />    
+    <PackageReference Include="Stripe.net" Version="39.68.0" />    
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SAASCLOUDAPP.BackgroundProcessing\SAASCLOUDAPP.BackgroundProcessing.csproj" />
+    <ProjectReference Include="..\SAASCLOUDAPP.BusinessLayer\SAASCLOUDAPP.BusinessLayer.csproj" />
+    <ProjectReference Include="..\SAASCLOUDAPP.DataAccessLayer\SAASCLOUDAPP.DataAccessLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  
+  <UsingTask TaskName="TransformXml" AssemblyFile="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Web\Microsoft.Web.Publishing.Tasks.dll" />
+  <Target Name="SetTransformAppConfigDestination" BeforeTargets="PrepareForBuild" Condition="exists('app.$(PublishProfileName).config')">
+    <PropertyGroup>
+      <!-- Force build process to use the transformed configuration file from now on. -->
+      <AppConfig>$(IntermediateOutputPath)$(TargetFileName).config</AppConfig>
+    </PropertyGroup>
+    <Message Text="AppConfig transformation destination: = $(AppConfig)" />
+  </Target>
+
+  <!-- Transform the app.config after the prepare for build completes. -->
+  <Target Name="TransformAppConfig" AfterTargets="PrepareForBuild" Condition="exists('app.$(PublishProfileName).config')">
+    <!-- Generate transformed app config in the intermediate directory -->
+    <TransformXml Source="app.config" Destination="$(AppConfig)" Transform="app.$(PublishProfileName).config" />
+  </Target>
+</Project>

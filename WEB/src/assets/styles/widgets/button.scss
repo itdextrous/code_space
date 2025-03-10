@@ -1,0 +1,31 @@
+
+.create-button span.mat-button-wrapper {
+    padding: 0px 0px;
+}
+
+.mat-mini-fab.create-button {
+    background-color: #13b5ea;
+}
+
+.create-button-label {
+    padding-left: 5px;
+}
+
+.mat-mini-fab.setup-page-create-button {
+    position: absolute;
+}
+
+.mat-mini-fab.small-create {
+    width: 25px;
+    height: 25px;
+
+    & span.mat-button-wrapper {
+
+        .mat-icon {
+            width: 15px;
+            height: 15px;
+            display: block;
+            padding-bottom: 4px;
+        }
+    }
+}

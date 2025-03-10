@@ -1,0 +1,21 @@
+$grid-color: lightgrey;
+
+app-root gridster {
+    background-color: transparent;
+    .gridster-column {
+        border-left: 0;
+        border-right: 0;
+        & + .gridster-column {
+            margin-left: -5px;
+            border-left: 1px solid $grid-color;
+        }
+    }
+    .gridster-row {
+        border-top: 0;
+        border-bottom: 0;
+        & + .gridster-row {
+            margin-top: -5px;
+            border-top: 1px solid $grid-color;
+        }
+    }
+}

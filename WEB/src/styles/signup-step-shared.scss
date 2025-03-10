@@ -1,0 +1,145 @@
+@import "palette";
+@import "signup-variables";
+
+$row-margin: 20px;
+$field-radius: 12px;
+$highlight-width: 10px;
+
+section {
+    background-color: white;
+    max-width: $page-width;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    padding: 2em;
+
+    border-radius: 20px;
+}
+
+h1, p.subtitle {
+    text-align: center;
+    color: black;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+p.subtitle {
+    margin: 0.5em 0;
+    font-size: 1.4em;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    fieldset {
+        width: 100%;
+        legend {
+            margin: 0;
+            font-size: inherit;
+            font-weight: bold;
+            border-bottom: none;
+        }
+    }
+}
+
+mat-form-field, .button-bar, .form-row, fieldset {
+    margin-top: $row-margin;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    label, mat-form-field {
+        &:not(:last-child) {
+            margin-right: $row-margin;
+        }
+    }
+
+    mat-form-field {
+        flex: 1 1;
+        width: auto;
+    }
+
+    label {
+        color: black;
+    }
+
+    mat-form-field {
+        margin-top: 0;
+    }
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    
+    mat-icon {
+        $icon-size: 20px;
+        font-size: $icon-size;
+        height: $icon-size;
+        width: $icon-size;
+    }
+
+    p {
+        margin: 0 0 0 5px;
+    }
+
+    &.highlight {
+        color: $workfacta-blue;
+    }
+}
+
+.button-bar {
+    display: flex;
+    justify-content: flex-end;
+
+    .back-button {
+        margin-right: auto;
+    }
+
+    button + button {
+        margin-left: 10px;
+    }
+}
+
+.side-border-wrapper {
+    height: calc(100% - 1.34375em);
+    width: $field-radius;
+
+    border-start-start-radius: $field-radius;
+    border-end-start-radius: $field-radius;
+
+    overflow: hidden;
+
+    .side-border {
+        display: block;
+        height: 100%;
+        width: $highlight-width;
+        
+        transition: background-color 225ms;
+    }
+}
+
+.mat-form-field-appearance-fill.highlight {
+    mat-label, input, mat-error, mat-hint {
+        padding-left: $highlight-width;
+        transition: padding-left 400ms cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    &.mat-form-field-should-float {
+        mat-label {
+            // Floating label is shrunk to 75%, so the padding is reduced as well.
+            padding-left: $highlight-width / 0.75;
+        }
+    }
+}

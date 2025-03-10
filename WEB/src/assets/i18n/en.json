@@ -1,0 +1,2065 @@
+{
+    "UserMenuTopRight": {
+        "userNotes": "User Notes",
+        "myProfile": "My Profile",
+        "manageClients": "Manage Clients",
+        "managePartners": "Manage Partners",
+        "manageFeatures": "Manage Features",
+        "configTemplates": "Config Templates",
+        "suggestions": "Suggestions",
+        "updateWeightings": "Update Weightings",
+        "changePassword": "Change Password",
+        "subscriptionPlans": "Subscription Plans",
+        "myPlans": "My Plans",
+        "eventHistory": "Event History",
+        "clientInstancePayment": "Client Instance Payment",
+        "partnerStripeDashboard": "Manage Stripe Account",
+        "timeMachine": "Time Machine",
+        "loadTemplate": "Load Template",
+        "logOut": "Log Out",
+        "sureLogout": "Do you want to Logout"
+    },
+    "ChallengeScreen": {
+        "challenges": "Challenges",
+        "setupChallenge": "Setup Challenge",
+        "showAllChallenges": "Show All Challenges",
+        "trend": "Trend",
+        "trendGraph": "Trend Graph",
+        "description": "Description",
+        "priority": "Priority",
+        "issueType": "IssueType",
+        "origin": "Origin",
+        "dateIdentified": "Date Identified",
+        "status": "Status",
+        "category": "Category",
+        "options": "Options",
+        "editIssue": "Edit Issue",
+        "deleteIssue": "Delete Issue",
+        "heading": "Heading"
+    },
+    "OpportunityScreen": {
+        "opportunities": "Opportunities",
+        "setupOpportunity": "Setup Opportunity",
+        "showAllOpportunities": "Show All Opportunities",
+        "trend": "Trend",
+        "trendGraph": "Trend Graph",
+        "description": "Description",
+        "priority": "Priority",
+        "issueType": "Issue Type",
+        "origin": "Origin",
+        "dateIdentified": "Date Identified",
+        "status": "Status",
+        "category": "Category",
+        "options": "Options",
+        "opportunity": "Opportunity",
+        "challenge": "Challenge",
+        "descriptionRequired": "Description required",
+        "required": "Required",
+        "priorityRequired": "Priority required",
+        "categoryRequired": "Category required",
+        "subCategoryRequired": "Sub Category required",
+        "owner": "Owner",
+        "creator": "Creator",
+        "subCategory": "Sub Category",
+        "editIssue": "Edit Issue",
+        "deleteIssue": "Delete Issue",
+        "team": "Team",
+        "heading": "Heading",
+        "headingRequired": "Heading Required"
+    },
+    "DiscussionItemScreen": {
+        "discussions": "Discussions",
+        "discussion": "Discussion",
+        "setup": "Setup Discussion",
+        "showAll": "Show All Discussions",
+        "description": "Description",
+        "priority": "Priority",
+        "issueType": "Issue Type",
+        "origin": "Origin",
+        "dateIdentified": "Date Identified",
+        "status": "Status",
+        "category": "Category",
+        "options": "Options",
+        "opportunity": "Opportunity",
+        "challenge": "Challenge",
+        "descriptionRequired": "Description required",
+        "required": "Required",
+        "priorityRequired": "Priority required",
+        "categoryRequired": "Category required",
+        "subCategoryRequired": "Sub Category required",
+        "owner": "Owner",
+        "creator": "Creator",
+        "subCategory": "Sub Category",
+        "editIssue": "Edit Issue",
+        "deleteIssue": "Delete Issue",
+        "team": "Team",
+        "heading": "Heading",
+        "trendGraph": "Trend Graph"
+    },
+    "NotesScreen": {
+        "note": "Note",
+        "issueType": "Issue Type",
+        "enterNotesText": "Click here to Enter Notes",
+        "description": "Description"
+    },
+    "DiscussDialog": {
+        "createDiscussion": "Create Discussion",
+        "discussionHeading": "Heading",
+        "reasonForDiscussion": "Reason for Discussion",
+        "discussType": "Discussion Type"
+    },
+    "raisedFrom": {
+        "action": "Raised from Action",
+        "number": "Raised from Number",
+        "goal": "Raised from Goal",
+        "report": "Raised from Report",
+        "news": "Raised from News",
+        "weeklyReport": "Raised from Weekly Report"
+    },
+    "approvalNoteDialog": {
+        "reviewNote": "Review Note",
+        "note": "Note"
+    },
+    "deleteRecurringActionDialog": {
+        "title": "Delete the recurring action?",
+        "message": "Deleting this action will cancel and delete the recurring action, not just this instance of the action. You won't be able to undo this."
+    },
+    "UploadDocument": {
+        "uploadHeading": "Upload & View Documents",
+        "selectFile": "Please select a file",
+        "upload": "Upload"
+    },
+    "editAttachmentsDialog": {
+        "heading": "Documents for: {{ description }}",
+        "add": "Add",
+        "noFiles": "No documents attached."
+    },
+    "editLinksDialog": {
+        "heading": "Links for: {{ description }}",
+        "linkTitle": "New Link",
+        "linkPlaceholder": "https://example.com",
+        "linkInvalid": "Please enter a valid URL",
+        "add": "Add",
+        "noLinks": "No links attached."
+    },
+    "editNotesDialog": {
+        "heading": "Notes for: {{ description }}",
+        "inputLabel": "Notes"
+    },
+    "DeleteText": {
+        "deleteText": "Are you sure you want to delete this",
+        "deleteCompanyText": "Are you sure you want to delete the company"
+    },
+    "ActionScreen": {
+        "action": "Action",
+        "discuss": "Discuss",
+        "setupAction": "Setup Action",
+        "showAllActions": "Show All Actions",
+        "description": "Description",
+        "status": "Status",
+        "priority": "Priority",
+        "origin": "Origin",
+        "dueDate": "Due Date",
+        "options": "Options",
+        "deleteAction": "Delete Action",
+        "editAction": "Edit Action",
+        "category": "Category",
+        "descriptionRequired": "Description required",
+        "required": "Required",
+        "dueDateRequired": "Due Date Required",
+        "priorityRequired": "Priority required",
+        "categoryRequired": "Category required",
+        "subCategoryRequired": "Sub Category required",
+        "goal": "Goal",
+        "privateAction": "Private Action",
+        "actionSolutionDetailsHeading": "Action & Solution Details",
+        "solutionDetailsHeading": "Solution Details",
+        "solutions": "Solutions",
+        "rootCause": "Root Cause",
+        "discussionNotes": "Discussion Notes",
+        "solution": "Solution",
+        "actionDetails": "Action Details",
+        "agreedAction": "Agreed Action",
+        "who": "Who",
+        "owner": "Owner",
+        "creator": "Creator",
+        "team": "Team",
+        "creatorRequired": "Creator Required",
+        "teamRequired": "Team Required",
+        "actionRecurrence": "Action Recurrence"
+    },
+    "NewMeetingStartScreen": {
+        "meetingUpdatesEfficiency": "Meeting Updates Efficiency",
+        "timer": "Timer",
+        "meetings": "Meetings",
+        "convenor": "Convenor",
+        "convenorRequired": "Convenor required",
+        "documentor": "Documentor",
+        "documentorRequired": "Documentor required",
+        "scheduledMeetingStart": "Scheduled Meeting Start",
+        "actualMeetingStart": "Actual Meeting Start",
+        "printAgenda": "Print Agenda",
+        "attendance": "Attendance",
+        "startMeeting": "Start Meeting",
+        "launchMeeting": "launch meeting",
+        "meetingLocked": "This Meeting is Locked",
+        "meetingInprogress": "Meeting is in Progress.",
+        "fYear": "FYear",
+        "qtr": "Qtr",
+        "week": "Week",
+        "unscheduledMeeting": "Unscheduled Meeting",
+        "unscheduledStartMeeting": "The scheduled meeting for this team has already taken place. Do you want to start an unscheduled meeting?",
+        "thisMeetingHasBeenCancelled": "This meeting has been cancelled",
+        "move": "Move",
+        "cancel": "Cancel",
+        "meetingPostponeDate": "New Meeting Date",
+        "dateRequired": "Date required",
+        "moveMeeting": "Move Meeting",
+        "reason": "Reason",
+        "reasonRequired": "Reason required",
+        "cancelMeeting": "Cancel Meeting",
+        "startTime": "Start Time",
+        "endTime": "End Time",
+        "startTimeRequired": "Start Time required",
+        "endTimeRequired": "End Time required",
+        "endTimeMustBeGreater": "End Time must be greater.",
+        "notFound": "Meeting not found. Please add one."
+    },
+    "NewMeetingGoalsScreen": {
+        "goals": "Goals",
+        "goalsSummary": "Goals Summary",
+        "goalsScore": "Goals Score",
+        "timer": "Timer",
+        "actionsCount": "Actions Count",
+        "heading": "Heading",
+        "description": "Description",
+        "qtr": "QTR",
+        "dueDate": "Due Date",
+        "department": "Department",
+        "status": "Status",
+        "category": "Category",
+        "subCategory": "Sub Category",
+        "action": "Action",
+        "discuss": "Discuss",
+        "options": "Options",
+        "enterNvisitLinks": "Enter & Visit Links",
+        "detailed": "Detailed",
+        "summary": "Summary"
+    },
+    "NewMeetingNumbersScreen": {
+        "numbers": "Numbers",
+        "numberSummary": "Number Summary",
+        "numbersScore": "Numbers Score",
+        "timer": "Timer",
+        "trend": "Trend",
+        "qtd": "QTD",
+        "result": "Result",
+        "target": "Target",
+        "weeklyTarget": "Weekly Target",
+        "description": "Description",
+        "ownerName": "Owner Name",
+        "action": "Action",
+        "discuss": "Discuss",
+        "options": "Options",
+        "ytdt": "YTDT",
+        "ytdr": "YTDR",
+        "trendGraph": "Trend Graph",
+        "weeklyResult": "Weekly Result",
+        "actionsCount": "Actions Count",
+        "expandAll": "Expand All",
+        "collapseAll": "Collapse All"
+    },
+    "NewMeetingReportsScreen": {
+        "reportSummary": "Report Summary"
+    },
+    "NewMeetingActionsScreen": {
+        "actions": "Actions",
+        "actionsSummary": "Actions Summary",
+        "actionsScore": "Actions Score",
+        "reportsScore": "Reports Score",
+        "timer": "Timer",
+        "overDue": "Overdue",
+        "dueThisWeek": "Due This Week",
+        "duecompletedMsg": "Due to be completed in the following week",
+        "all": "ALL",
+        "filterByOrigin": "Filter By Origin",
+        "owner": "Owner",
+        "description": "Description",
+        "status": "Status",
+        "dueDate": "Due Date",
+        "origin": "Origin",
+        "action": "Action",
+        "discuss": "Discuss",
+        "Options": "Options"
+    },
+    "newMeetingApprovalsScreen": {
+        "approvals": "Approvals",
+        "actionsCount": "Actions Count",
+        "description": "Description",
+        "origin": "Origin",
+        "issueType": "Issue Type",
+        "priority": "Priority",
+        "referringTeam": "Referring Team",
+        "owner": "Owner",
+        "dateIdentified": "Date Identified",
+        "status": "Status",
+        "options": "Options",
+        "approve": "Approve",
+        "reject": "Reject",
+        "dueDate":"Due Date",
+        "action": "Action",
+        "discuss": "Discuss"
+    },
+    "NewMeetingDiscussNAgreeScreen": {
+        "discussNagree": "DISCUSS AND AGREE",
+        "Issues": "Issues",
+        "timer": "Timer",
+        "owner": "Owner",
+        "description": "Description",
+        "status": "Status",
+        "origin": "Origin",
+        "dueDate": "Due Date",
+        "action": "Action",
+        "discuss": "Discuss",
+        "actionsCount": "Actions Count",
+        "issueSolution": "Solution",
+        "discussionType": "Type",
+        "priority": "Priority",
+        "dateIdentified": "Date Identified",
+        "options": "Options",
+        "solve": "SOLVE",
+        "editIssue": "Edit Issue",
+        "deleteIssue": "Delete Issue",
+        "descriptionRequired": "Description required",
+        "rootCause": "Root Cause",
+        "discussionNotes": "Discussion Notes",
+        "solution": "Solution",
+        "actions": "Actions",
+        "actionsNotRequired": "Actions not required",
+        "agreedAction": "Agreed Action",
+        "who": "Who",
+        "inputValueRequired": "Input Value is required",
+        "ownerRequired": "Owner is required",
+        "dueDateRequired": "Due Date is required",
+        "referForApproval": "Refer for Approval",
+        "approvalHistory" : "Approval History",
+        "withTheseComments": "with these comments",
+        "heading":"Heading",
+        "reasonForDiscussion" : "Reason For Discussion",
+        "reasonForDiscussionRequired": "Reason For Discussion required"
+    },
+    "NewMeetingCloseScreen": {
+        "meetingClose": "Meeting Close",
+        "thisMeeting": "This Meeting",
+        "score": "Score",
+        "scoreRequired": "Score is required",
+        "suggestionimprovement": "Suggestion for meeting improvement",
+        "comment": "Comment",
+        "sendMinutes": "Send Minutes of Meeting",
+        "time": "Time",
+        "startTime": "Start Time",
+        "startTimeRequired": "Start Time required",
+        "date": "Date",
+        "nextMeetingDateReq": "Next meeting date is required",
+        "closeMeeting": "Close Meeting",
+        "nextMeeting": "Next Meeting"
+    },
+    "UpdateScreen": {
+        "fYear": "FYear",
+        "goals": "Goals",
+        "qtr": "Qtr",
+        "reportingWeekEnded": "Reporting week ended",
+        "infoMsg": "Updates to your Quarterly Goals and Numbers are entered in this section. This allows the business to know if it is on target and take any corrective actions on a timely basis, if required.",
+        "week": "Week",
+        "updates": "Updates",
+        "expandAll": "Expand All",
+        "collapseAll": "Collapse All",
+        "actionsCount": "Actions Count",
+        "description": "Description",
+        "dueDate": "Due Date",
+        "status": "Status",
+        "options": "Options",
+        "numbers": "Numbers",
+        "updated": "Updated",
+        "trend": "Trend",
+        "result": "Result",
+        "target": "Target",
+        "clickHeading": "Click for Heading",
+        "clickDescription": "Click for Description",
+        "trendGraph": "Trend Graph",
+        "heading": "Heading"
+    },
+    "TeamPerformance": {
+        "fYear": "FYear",
+        "qtr": "Qtr",
+        "week": "Week",
+        "teamPerformance": "Team Performance",
+        "scoreBoard": "Score Board",
+        "loadDashboard": "Load Dashboard",
+        "pleaseLoadDashboard!": "Please Load Dashboard!"
+    },
+    "CompanyPerformance": {
+        "companyPerformance": "Company Performance",
+        "companyExecutionScore": "Company Execution Score",
+        "teamExecutionScore": "Team Execution Score"
+    },
+    "MeetingArchiveScreen": {
+        "closedMeetings": "Closed Meetings",
+        "meetingName": "Meeting Name",
+        "suggestion": "Suggestion",
+        "score": "Score",
+        "startDate": "Date",
+        "meetingDuration": "Meeting Duration",
+        "view": "View"
+    },
+    "HomeScreen": {
+        "dashboard": "Dashboard",
+        "resize": "Resize",
+        "remove": "Remove",
+        "dateFormat": "dateFormat",
+        "refreshLabel": "Refresh",
+        "unlockLabel": "Unlock Dashboard",
+        "lockLabel": "Lock Dashboard",
+        "addWidgetLabel": "Add Widget",
+        "configure": "Configure",
+        "widgetNoConfig": "Click here to set up this widget!",
+        "widgetNoData": "No data found. Click here to refresh.",
+        "unlockedWarning": "The dashboard is currently unlocked for editing. While it is unlocked, you will be unable to use any of the widgets. Click this banner or the \"Lock\" button in the top right to continue.",
+        "loadFailed": "An unexpected error occcurred loading your dashboard settings. Click here to try again.",
+        "saveError": "An unexpected error occurred saving your dashboard settings. Please refresh your page and try again.",
+        "widgetError": "There was an error loading this widget's content. Please check your internet connection, and click here or refresh your page to try again.",
+        "noWidgets": {
+            "title": "Your Dashboard is Empty!",
+            "message": "Get started by adding some widgets to your dashboard."
+        },
+        "addWidget": {
+            "title": "Widgets",
+            "noWidgetsAvailableWarning": "There are no new widgets to add.",
+            "widgetLabel": "Select Widget",
+            "widgetRequired": "Widget is required",
+            "widgetPositionError": "There is not enough room on the dashboard for this widget. Please remove or resize existing widgets to make space.",
+            "add": "Add"
+        },
+        "chooseNumber": {
+            "title": "Select a Number",
+            "noNumbersAvailableWarning": "There are no numbers in the current period.",
+            "numberLabel": "Select Number",
+            "numberRequired": "Number is required"
+        },
+        "widget": {
+            "numberchart": {
+                "notFound": "Number not found. Click here to choose a different number."
+            },
+            "teamperformance": "Team Performance"
+        },
+        "widgetLoading": "Loading Data..."
+    },
+    "HelpPage": {
+        "feedbackTooltip": "Click here to send us a Suggestion or Problem",
+        "feedback": "Feedback"
+    },
+    "ProjectionsScreen": {
+        "status": "Status",
+        "attachDocuments": "Attach Documents",
+        "itemDescription": "Item Description",
+        "assumptions": "Assumptions",
+        "newResourcesNext12Months": "New Resources Next 12 Months",
+        "fY": "FY",
+        "inFY": "In FY",
+        "actual": "Actual",
+        "categoryName": "Category Name",
+        "resourceType": "Resource Type",
+        "options": "Options",
+        "annualPlan": "Annual Plan",
+        "in1Year": "In 1 Year",
+        "year1Actual": "Year 1 Actual",
+        "in2Year": "In 2 Year",
+        "in3Year": "In 3 Year",
+        "in5Year": "In 5 Year",
+        "in7Year": "In 7 Year",
+        "thisYearResult": "This Year Result",
+        "category": "Category",
+        "subCategory": "Sub Category",
+        "save": "Save",
+        "itemRequired": "Item required",
+        "categoryRequired": "Category required",
+        "subCategoryRequired": "Sub Category required"
+    },
+    "managePartners": {
+        "title": "Manage Partners",
+        "addButton": "Add Partner",
+        "createStripe": "Create Stripe Account",
+        "viewStripe": "View Stripe Account",
+
+        "fields": {
+            "name": "Name",
+            "partnerType": "Partner Type",
+            "partnerStatus": "Partner Status",
+            "managedCompanies": "Managed Companies",
+            "teamName": "Team Name",
+            "timeZone": "Time Zone",
+            "fyStartDate": "Financial Year Start",
+            "percentShare": "Percent Share",
+
+            "errors": {
+                "required": "is required",
+                "min": "must be at least {{ min }}",
+                "max": "must be at most {{ max }}",
+                "integer": "must be an integer"
+            }
+        },
+
+        "createStripeAccount": {
+            "title": "Create Stripe Account",
+            "description": "Are you sure you want to create a Stripe account for this partner?",
+            "create": "Create",
+            "success": "Stripe Account Created Successfully"
+        },
+
+        "editPartner": {
+            "title": "Edit Partner",
+
+            "errors": {
+                "notFound": "The specified company is not found. Please try again."
+            }
+        },
+        "addPartner": {
+            "title": "Add Partner",
+
+            "errors": {
+                "nameConflict": "A company already exists with this name. Please choose another name."
+            }
+        }
+    },
+    "cloneTemplateDialog": {
+        "title": "Load Template",
+        "noTemplateAvailable": "No templates are available for the current company.",
+        "cloneUnavailable": "The clone function is unavailable for the current company. Please try again with another company.",
+        "template": "Template Name",
+        "templateRequired": "Please choose a template",
+        "user": "Target User",
+        "userRequired": "Please choose a user",
+        "load": "Load",
+        "confirmTitle": "Load Template?",
+        "confirmDescription": "Are you sure you want to load this template? This will reset all data for the current company.",
+        "confirmButtonTitle": "Continue"
+    },
+    "editApiKeyDialog": {
+        "title": "API Key",
+        "description": "Description",
+        "apiKey": "API Key",
+        "apiKeyType": "API Key Type",
+        "expiresIn": "Expires In",
+        "create": "Create API Key",
+        "expiresInDays": {
+            "1Day": "1 day",
+            "1Week": "1 week",
+            "1Month": "1 Month",
+            "6Months": "6 months",
+            "1Year": "1 Year",
+            "2Years": "2 Years",
+            "5Years": "5 Years"
+        }
+    },
+    "newApiKeyDialog": {
+        "title": "New API Key",
+        "description": "The following API key has been successfully generated. Please copy it to a safe location:",
+        "copyToClipboard": "Copy to Clipboard"
+    },
+    "registration": {
+        "cancelDialog": {
+            "title": "Cancel Registration",
+            "contentOne": "Are you sure you want to cancel your registration?",
+            "contentTwo": "You will have to start again next time!"
+        },
+        "account": {
+            "title": "I’m ready to unlock growth!",
+            "subtitle": "Let’s create your account",
+            "agree": "I agree to the ",
+            "privacy": "Privacy Policy",
+            "and": "and",
+            "termsOfUse": "Terms of Use",
+            "agreeRequired": "You must agree to the Privacy Policy and Terms of Use",
+            "fields": {
+                "firstName": {
+                    "label": "First Name",
+                    "errors": {
+                        "required": "Please enter your first name"
+                    }
+                },
+                "lastName": {
+                    "label": "Last Name",
+                    "errors": {
+                        "required": "Please enter your last name"
+                    }
+                },
+                "email": {
+                    "label": "Work Email",
+                    "errors": {
+                        "required": "Please enter your work email address",
+                        "invalid": "Please enter a valid email address",
+                        "userexists": "A user with this email address already exists"
+                    }
+                },
+                "phone": {
+                    "label": "Phone Number",
+                    "hint": "This may be used to contact you if you need assistance",
+                    "errors": {
+                        "required": "Please enter your phone number",
+                        "invalid": "Please enter a valid phone number"
+                    }
+                },
+                "password": {
+                    "label": "Choose a Password",
+                    "errors": {
+                        "required": "Please choose a password",
+                        "minlength": "Your password must be at least 8 characters long",
+                        "invalid": "Your password must include a combination of upper case letters, lower case letters, and numbers"
+                    }
+                },
+                "confirmPassword": {
+                    "label": "Confirm Password",
+                    "errors": {
+                        "required": "Please confirm your password",
+                        "mustMatch": "Your passwords do not match"
+                    }
+                }
+            }
+        },
+        "company": {
+            "title": "About your Company",
+            "subtitle": "This info will personalise your experience",
+            "fields": {
+                "companyName": {
+                    "label": "Company Name",
+                    "placeholder": "My Company",
+                    "errors": {
+                        "required": "Please enter your company’s name"
+                    }
+                },
+                "industry": {
+                    "label": "Your industry",
+                    "placeholder": "Construction, Manufacture, Consulting, etc.",
+                    "errors": {
+                        "required": "Please select your industry"
+                    }
+                },
+                "month": {
+                    "title": "What month does your planning year start?",
+                    "label": "Month",
+                    "hint": "Most common answers are: January (calendar year) or July (financial year)",
+                    "warning": "Once set, the planning year cannot be edited"
+                }
+            }
+        },
+        "team": {
+            "title": "Create your team",
+            "subtitle": "It’s time to add members to your team",
+            "loginError": "An error occurred logging you in. Please try again later.",
+            "fields": {
+                "teamName": {
+                    "label": "Team name",
+                    "placeholder": "Management Team",
+                    "errors": {
+                        "required": "Please enter your team’s name"
+                    }
+                },
+                "type": {
+                    "title": "What best describes your team’s activities?",
+                    "operations": "Operations",
+                    "salesmarketing": "Sales/Marketing",
+                    "finance": "Finance",
+                    "management": "Management",
+                    "errors": {
+                        "required": "Please pick a type of team"
+                    }
+                },
+                "typeOther": {
+                    "title": "Other? Specify here",
+                    "label": "Other"
+                },
+                "members": {
+                    "title": "Add team members",
+                    "add": "Add",
+                    "remove": "Remove",
+                    "addMore": "Add more team members"
+                },
+                "firstName": {
+                    "label": "First Name",
+                    "errors": {
+                        "required": "Please enter your colleague’s first name"
+                    }
+                },
+                "lastName": {
+                    "label": "Last Name",
+                    "errors": {
+                        "required": "Please enter your colleague’s last name"
+                    }
+                },
+                "email": {
+                    "label": "Work Email",
+                    "domainWarning": "This email does not include the expected company domain.",
+                    "fixDomain": "Click me to fix it!",
+                    "errors": {
+                        "required": "Please enter your colleague’s work email address",
+                        "invalid": "Please enter a valid email address",
+                        "userexists": "A user with this email address already exists"
+                    }
+                }
+            }
+        },
+        "verification": {
+            "title": "Verify your email",
+            "subtitle": "You’re nearly there!",
+            "verify": "To finish setting up your account and start using Workfacta, please verify your email address.",
+            "emailSent": "A verification link has been sent to:",
+            "notReceived": "I haven’t received my email",
+            "resendDisclaimer": "Please note that the email may take a few minutes to appear in your inbox. Be sure to check your spam/junk folder. If you are still not receiving the verification email, you can:",
+            "resend": "Resend verification",
+            "or": "or",
+            "changeEmail": "Change email address",
+            "checkVerification": "Check my verification",
+            "changeEmailError": "There was an error updating your email address. Please try again later."
+        },
+        "confirm": {
+            "title": "Email Confirmation",
+            "failureOne": "The link you have clicked is invalid or has expired.",
+            "failureTwo": "Click below to return to login and try again.",
+            "backToLogin": "Back to Login",
+            "error": "There was an unexpected error confirming your email. Please try again later.",
+            "success": "Your email has been successfully verified. Either close this tab and continue where you left off, or click below to head back to login.",
+            "retry": "Retry"
+        }
+    },
+    "onboarding": {
+        "cancelDialog": {
+            "title": "Log Out",
+            "contentOne": "Are you sure you want to log out of Workfacta?",
+            "contentTwo": "You can pick up where you left off by logging back in next time!"
+        },
+        "goals": {
+            "title": "Your first Goal",
+            "subtitle": "We’ll help you plan your first objective",
+            "smart": {
+                "title": "Let’s make it SMART!",
+                "explanation": "What makes it a SMART goal?",
+                "specific": "Specific",
+                "measurable": "Measurable",
+                "attainable": "Attainable",
+                "relevant": "Relevant",
+                "timeBound": "Time-bound"
+            },
+            "callToAction": "What do you want to achieve this quarter?",
+            "fields": {
+                "heading": {
+                    "label": "Goal Heading",
+                    "errors": {
+                        "required": "Please enter a heading for your goal"
+                    }
+                },
+                "description": {
+                    "label": "Description",
+                    "errors": {
+                        "required": "Please enter a description for your goal"
+                    }
+                }
+            },
+            "add": "Add up to 3 goals",
+            "remove": "Remove Goal"
+        },
+        "actions": {
+            "title": "Assign Actions",
+            "subtitle": "Get things moving towards your goal",
+            "callToAction": "Start to assign some actions to your team members",
+            "goal": "Goal {{ index }}",
+            "details": "{{ user }} by {{ date }}",
+            "fields": {
+                "description": {
+                    "label": "Description",
+                    "errors": {
+                        "required": "Please enter a description for your action"
+                    }
+                },
+                "assignee": {
+                    "label": "Who",
+                    "errors": {
+                        "required": "Please choose who this action will be assigned to"
+                    }
+                },
+                "dueDate": {
+                    "label": "Date",
+                    "errors": {
+                        "required": "Please choose a due date for your action",
+                        "min": "Please choose a due date in the future"
+                    }
+                }
+            },
+            "addMore": "Add more actions",
+            "remove": "Remove Action"
+        },
+        "meeting": {
+            "title": "Let’s organise a Meeting",
+            "subtitle": "Set up regular meetings to review your progress",
+            "callToAction": "When do you want to review your progress?",
+            "note": "Don’t worry, you can change these settings later.",
+            "to": " to ",
+            "fields": {
+                "day": {
+                    "label": "Day of Week",
+                    "errors": {
+                        "required": "Please choose which day you will have your meeting"
+                    }
+                },
+                "startTime": {
+                    "label": "Start Time",
+                    "placeholder": "10 am",
+                    "errors": {
+                        "required": "Please enter your meeting start time",
+                        "time": "Please enter a valid time"
+                    }
+                },
+                "endTime": {
+                    "label": "End Time",
+                    "placeholder": "11 am",
+                    "errors": {
+                        "required": "Please enter your meeting end time",
+                        "time": "Please enter a valid time",
+                        "afterStart": "End time must be after the start time"
+                    }
+                }
+            }
+        },
+        "numbers": {
+            "title": "Set up a Number",
+            "subtitle": "Measure your company’s health",
+            "callToAction": "Assign some metrics to keep track of your company’s performance.",
+            "note": "We recommend setting weekly targets, but you can edit the frequency of reporting and targets later.",
+            "fields": {
+                "description": {
+                    "label": "Description",
+                    "errors": {
+                        "required": "Please enter a description for your number"
+                    }
+                },
+                "target": {
+                    "label": "Weekly target",
+                    "errors": {
+                        "required": "Please enter a target for your number"
+                    }
+                }
+            },
+            "add": "Add up to 4 numbers"
+        },
+        "review": {
+            "title": "Your team is all set and ready to start kicking goals",
+            "subtitle": "Take a moment to review your data. You can also edit it later.",
+            "quarter": "Q{{ quarter }}",
+            "goal": "Goal {{ index }}",
+            "actionDetails": "{{ user }} by {{ date }}",
+            "numbers": "Numbers to report",
+            "planningYear": "Planning year starts",
+            "meetingSchedule": "Meeting schedule",
+            "frequency": "Frequency",
+            "weekly": "Weekly"
+        },
+        "payment": {
+            "title": "One last step to reaching your goals!",
+            "subtitle": "Finalise your payment and you are good to go.",
+            "setupPayment": "Setup Payment"
+        },
+        "paymentError": {
+            "title": "Whoops! Something went wrong.",
+            "subtitle": "There was an unexpected error while processing your payment. Please click below to retry."
+        },
+        "success": {
+            "title": "Congratulations!",
+            "subtitle": "Your payment has been confirmed and you are ready to begin!",
+            "start": "Start using Workfacta"
+        }
+    },
+    "confirmDeactivateDialog": {
+        "title": "Unsaved Changes",
+        "message": "This page has unsaved changes. Are you sure you want to continue?",
+        "dontSave": "Don’t Save"
+    },
+    "recurrence": {
+        "at": "At",
+        "every": "Every",
+        "on": "On",
+        "onThe": "On the",
+        "next": "Next Scheduled",
+        "interval": "Interval",
+        "index": "Index",
+        "type": "Frequency",
+        "day": "Day"
+    },
+    "widgetType": {
+        "opportunities": "Opportunities",
+        "challenges": "Challenges",
+        "discussions": "Discussions",
+        "outstandingactions": "Overdue Actions",
+        "goalstatus": "Goal Status",
+        "numberstatus": "Number Status",
+        "reportstatus": "Report Status",
+        "days": "My Week",
+        "actionsduethisweek": "Actions Due This Week",
+        "allopenactions": "All Open Actions",
+        "upcomingactions": "Upcoming Actions",
+        "enterprise": "My Week - Enterprise",
+        "nextweek": "Next Week",
+        "nextweekenterprise": "Next Week - Enterprise",
+        "enterpriseoutstandingactions": "Overdue Actions - Enterprise",
+        "enterpriseactionsduethisweek": "Actions Due This Week - Enterprise",
+        "enterpriseallopenactions": "All Open Actions - Enterprise",
+        "enterpriseupcomingactions": "Upcoming Actions - Enterprise",
+        "numberchart": "Number Chart",
+        "teamperformance": "Team Performance Chart"
+    },
+    "recurrenceType": {
+        "day": "Day",
+        "days": "Days",
+        "week": "Week",
+        "weeks": "Weeks",
+        "month": "Month",
+        "months": "Months"
+    },
+    "indices": {
+        "first": "first",
+        "second": "second",
+        "third": "third",
+        "fourth": "fourth",
+        "last": "last"
+    },
+    "dayOfWeek": {
+        "sunday": "Sunday",
+        "monday": "Monday",
+        "tuesday": "Tuesday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday",
+        "saturday": "Saturday"
+    },
+    "numberTargetType": {
+        "aboveTarget": "Above Target",
+        "belowTarget": "Below Target",
+        "withinRange": "Within Range"
+    },
+    "planningStatus": {
+        "draft": "Draft",
+        "locked": "Locked"
+    },
+    "numberType": {
+        "normal": "Normal",
+        "currency": "Currency",
+        "percentage": "Percentage"
+    },
+    "numberEntryType": {
+        "deltas": "Change since last entered",
+        "totals": "Total this period"
+    },
+    "captureMethod": {
+        "manual": "Manual",
+        "automatic": "Automatic"
+    },
+    "recurrenceDescription": {
+        "daily": "Every day",
+        "multiDaily": "Every {{ interval }} days",
+        "weekly": "Every week on {{ dayOfWeek }}",
+        "multiWeek": "Every {{ interval }} weeks on {{ dayOfWeek }}",
+        "monthly": "Every month on the {{ index }} {{ dayOfWeek }}",
+        "multiMonth": "Every {{ interval }} months on the {{ index }} {{ dayOfWeek }}"
+    },
+    "updateScheduleType": {
+        "title": "Update Frequency",
+        "everyWeek": "Every Week",
+        "everyMeeting": "Every Meeting",
+        "custom": "Custom"
+    },
+    "actionRecurringType": {
+        "never": "Never",
+        "custom": "Custom"
+    },
+    "partnerType": {
+        "individual": "Individual",
+        "firm": "Firm",
+        "education": "Education",
+        "lab": "Lab"
+    },
+    "partnerStatus": {
+        "silver": "Silver",
+        "gold": "Gold",
+        "platinum": "Platinum"
+    },
+    "stripeProductType": {
+        "team": "Team",
+        "partner": "Partner"
+    },
+    "paymentType": {
+        "free": "Free",
+        "paidInvoiced": "Paid - Invoiced",
+        "paidStripe": "Paid - Stripe",
+        "mixed": "Mixed Payment"
+    },
+    "role": {
+        "superAdmin": "Super Admin",
+        "enterpriseAdmin": "Enterprise Admin",
+        "partnerAdmin": "Partner Admin",
+        "partner": "Partner",
+        "admin": "Admin",
+        "user": "User",
+        "associate": "Associate",
+        "advisor": "Advisor"
+    },
+    "errors": {
+        "unexpected": "An unexpected error occurred. Please try again later."
+    },
+    "errorCard": {
+        "defaultTitle": "Error",
+        "defaultMessage": "An unexpected error occurred. Click here to try again."
+    },
+    "statusButton": {
+        "success": "Success!",
+        "error": "Error!",
+        "warning": "Warning!",
+        "loading": "Loading..."
+    },
+    "FoundationPrinciplesScreen": {
+        "status": "Status",
+        "attachDocuments": "Attach Documents",
+        "foundationPrinciples": "Foundation Principles",
+        "copyPreviousYear": "Copy Previous Year",
+        "save": "Save",
+        "print": "Print"
+    },
+    "BusinessGoalsScreen": {
+        "businessGoals": "Business Goals",
+        "tacticCount": "Tactic Count",
+        "description": "Description",
+        "heading": "Heading",
+        "dueDate": "Due Date",
+        "statusDescription": "Status Description",
+        "owner": "Owner",
+        "departmentName": "Department Name",
+        "tactic": "Tactic",
+        "options": "Options",
+        "annualGoal": "Annual Goal",
+        "headingrequired": "Heading required",
+        "descriptionRequired": "Description required",
+        "goalStatus": "Goal Status",
+        "who": "Who",
+        "department": "Department",
+        "annualGoalArea": "Annual Goal Area",
+        "categoryRequired": "Category required",
+        "save": "Save",
+        "Are you sure, you want to delete this Goal?": "Are you sure, you want to delete this Goal?",
+        "yes": "YES",
+        "goalType": "Goal Type",
+        "statusRequired": "Status required",
+        "required": "Required",
+        "dueDateRequired": "Due Date Required",
+        "subCategory": "Sub Category",
+        "subCategoryRequired": "Sub Category required",
+        "annualGoalType": "Annual Goal Type",
+        "annualGoalTypeRequired": "Annual Goal Type required",
+        "count": "Count",
+        "expandAll": "Expand All",
+        "collapseAll": "Collapse All"
+    },
+    "BusinessPlanScreen": {
+        "team": "Team",
+        "currentYear": "Current Year",
+        "date": "Date",
+        "businessPlan": "Business Plan",
+        "planningMemorandum": "Planning Memorandum",
+        "projections": "Projections",
+        "itemDescription": "Item Description",
+        "assumptions": "Assumptions",
+        "thisYearResult": "This Year Result",
+        "in1Year": "In 1 Year",
+        "in3Year": "In 3 Year",
+        "in5Year": "In 5 Year",
+        "criticalSuccessFactors": "Critical Success Factors",
+        "description": "Description",
+        "resourcesRequired": "Resources Required",
+        "staff": "Staff",
+        "newResourcesNext12Months": "New Resources Next 12 Months",
+        "area": "Area",
+        "category": "Category",
+        "subCategory": "Sub Category",
+        "year": "Year",
+        "other": "Other",
+        "measuresofSuccess": "Measures of Success",
+        "businessGoals": "Business Goals",
+        "goal": "Goal",
+        "dueDate": "Due Date",
+        "owner": "Owner",
+        "print": "Print",
+        "strategies": "Strategies",
+        "mission": "Mission",
+        "values": "Values",
+        "visionElements3Years": "Vision Elements - 3 Years",
+        "year1": "Year 1",
+        "year2": "Year 2",
+        "year3": "Year 3",
+        "vision": "Vision",
+        "visionCriticalSuccessFactors": "Vision - Critical Success Factors",
+        "staffResources": "Staff Resources",
+        "position": "Position",
+        "department": "Department",
+        "salary": "Salary",
+        "hireYear": "Hire Year",
+        "hireQtr": "Hire Qtr",
+        "staffCharacteristics": "Staff Characteristics",
+        "resourcesNonStaff": "Resources (Non Staff)",
+        "qtr": "Qtr",
+        "goalsAndStrategies": "Goals and Strategies",
+        "departmentName": "Department Name"
+    },
+    "DatesScreen": {
+        "dates": "Dates",
+        "location": "Location",
+        "date": "Date",
+        "attendees": "Attendees",
+        "options": "Options",
+        "locationRequired": "Location required",
+        "dateRequired": "Date required",
+        "selectAttendees": "Select Attendees",
+        "save": "Save",
+        "editDate": "Edit Date",
+        "deleteDate": "Delete Date"
+    },
+    "SetupCompanyScreen": {
+        "companySetup": "Company Setup",
+        "addNew": "Add New",
+        "company": "Company",
+        "name": "Name",
+        "companyNameRequired": "Company name required",
+        "defaultTimeZone": "Default Time Zone",
+        "timeZoneRequired": "Default Time Zone is required",
+        "departments": "Departments ",
+        "address": "Address",
+        "addressRequired": "Address Required",
+        "timeFormat": "Time Format",
+        "timeFormatIsRequired": "Time Format is required",
+        "dateFormats": "Date Formats",
+        "dateFormatIsRequired": "Date Format is required",
+        "financialYearStart": "Financial Year Start",
+        "financialYearStartDateRequired": "Financial Year Start date required",
+        "country": "Country",
+        "enterprisePackEnabled": "Enterprise Pack Enabled",
+        "logo": "Logo",
+        "departmentName": "Department Name",
+        "options": "Options",
+        "business": "Business",
+        "upload": "UPLOAD",
+        "departmentNameRequired": "Department name required",
+        "department": "Department",
+        "primaryTeam": "Primary Team",
+        "primaryTeamRequired": "Primary Team required",
+        "companyLogo": "Company Logo",
+        "companyNameConflictError": "A Company already exists with this name. Please update the name and try again.",
+        "companyDomain": "Company Domain",
+        "placeholderDomain": "YourCompany.com",
+        "invalidDomainMessage": "This is not a valid email domain. An example of a valid email domain: YourCompany.com.au"
+    },
+    "MarketStrategyScreen": {
+        "status": "Status",
+        "copyPreviousYear": "Copy Previous Year",
+        "save": "Save",
+        "print": "Print",
+        "marketStrategy": "Market Strategy",
+        "input": "Input",
+        "inputValueisRequired": "Input Value is required",
+        "statusRequired": "Status required"
+    },
+    "QuarterlyPlanningGoalScreen": {
+        "fy": "FY",
+        "qtr": "QTR",
+        "q": "Q",
+        "status": "Status",
+        "actionsCount": "Actions Count",
+        "heading": "Heading",
+        "description": "Description",
+        "dueDate": "Due Date",
+        "department": "Department",
+        "category": "Category",
+        "businessGoals": "Business Goals",
+        "action": "Action",
+        "discuss": "Discuss",
+        "options": "Options",
+        "headingRequired": "Heading required",
+        "descriptionRequired": "Description required",
+        "statusRequired": "Status required",
+        "required": "Required",
+        "QTRRequired": "QTR required",
+        "dueDateRequired": "Due Date Required",
+        "categoryRequired": "Category required",
+        "subCategoryRequired": "Sub Category required",
+        "resourceRequired": "Resource required",
+        "budgetCostRequired": "Budget Cost required",
+        "commentRequired": "Comment required",
+        "whoRequired": "Who required",
+        "hoursRequired": "Hours required",
+        "none": "None",
+        "privateGoal": "Private Goal",
+        "planningStatus": "Planning Status",
+        "successMetric": "Success Metric",
+        "riskIfNotCompleted": "Risk If Not Completed",
+        "budgetCost": "Budget Cost",
+        "comment": "Comment",
+        "hours": "Hours",
+        "linkToAnnualBusinessGoal": "Link to Annual Business Goal",
+        "annualBusinessGoal": "Annual Business Goal",
+        "strategies": "Strategies",
+        "previousQuarter": "Previous Quarter",
+        "nextQuarter": "Next Quarter",
+        "expandAll": "Expand All",
+        "collapseAll": "Collapse All",
+        "clickForHeading": "Click for Heading",
+        "clickForDescription": "Click for Description",
+        "editGoal": "Edit Goal",
+        "copyGoal": "Copy Goal",
+        "deleteGoal": "Delete Goal",
+        "recurringTarget": "Recurring Target",
+        "recurringGoal": "Recurring Goal",
+        "detailed": "Detailed",
+        "summary": "Summary"
+    },
+    "executionPlanReportScreen": {
+        "fy": "FY",
+        "qtr": "QTR",
+        "week": "Week",
+        "planExecutionReport": "Plan Execution Report",
+        "team": "Team",
+        "quarter": "Quarter",
+        "notes": "Notes",
+        "date": "Date",
+        "quarterlyStrategicGoals&Actions": "Quarterly Strategic Goals & Actions",
+        "heading": "Heading",
+        "description": "Description",
+        "status": "Status",
+        "category": "Category",
+        "owner": "Owner",
+        "dueDate": "Due Date",
+        "print": "PRINT"
+    },
+    "QuarterlyPlanningNumberScreen": {
+        "fy": "FY",
+        "qtr": "QTR",
+        "q": "Q",
+        "status": "Status",
+        "numbers": "Numbers",
+        "setupNumber": "Setup Number",
+        "copyPreviousQTR": "Copy Previous QTR",
+        "trend": "Trend",
+        "description": "Description",
+        "qtd": "QTD",
+        "result": "Result",
+        "target": "Target",
+        "targetLow": "Target (low)",
+        "targetHigh": "Target (high)",
+        "weeklyTargetTitle": "Weekly Targets",
+        "weekTarget": "W {{ week }}",
+        "errorTargetMustBeHigher": "The high target must be greater than the low target.",
+        "errorTargetInvalid": "Invalid",
+        "high": "High",
+        "low": "Low",
+        "owner": "Owner",
+        "department": "Department",
+        "captureMethod": "Update Method",
+        "captureFrequency": "Capture Frequency",
+        "updater": "Updater",
+        "numberStatus": "Number Status",
+        "category": "Category",
+        "action": "Action",
+        "discuss": "Discuss",
+        "options": "Options",
+        "number": "Number",
+        "descriptionRequired": "Description required",
+        "descriptionMaxLength": "Description must be less than {{ requiredLength }} characters",
+        "numberType": "Number Type",
+        "setForEachWeek": "Set For Each Week",
+        "targetRequired": "Target required",
+        "ownerRequired": "Owner Required",
+        "required": "Required",
+        "draft": "Draft",
+        "isRunningBalance": "Is Running Balance",
+        "enteringTotals": "Entering Running Totals?",
+        "targetPriorToNumberStart": "Target prior to Number start",
+        "resultPriorToNumberStart": "Result prior to Number start",
+        "desiredResult": "Desired Result",
+        "aboveTarget": "Above Target",
+        "belowTarget": "Below Target",
+        "categoryRequired": "Category required",
+        "statusRequired": "Status required",
+        "subCategory": "Sub Category",
+        "subCategoryRequired": "Sub Category required",
+        "editNumber": "Edit Number",
+        "copyNumber": "Copy Number",
+        "deleteNumber": "Delete Number",
+        "trendGraph": "Trend Graph",
+        "qtrRequired": "QTR Required",
+        "targetAboveRequired": "Target Above Required",
+        "targetBelowRequired": "Target Below Required",
+        "isTpnNeeded": "TPNS Required",
+        "isTpnRequired": "TPNS Required",
+        "isRpnRequired": "RPNS Required",
+        "weeklyTarget": "Weekly Target",
+        "recurringNumber": "Recurring Number",
+        "loadFailed": "An unexpected error occcurred loading the list of numbers. Click here to try again.",
+        "editLockWarning": "Locked Numbers cannot be edited.",
+        "deleteLockWarning": "Locked Numbers cannot be deleted.",
+        "deleteConfirmation": "Are you sure you want to delete the number, \"{{ description }}\"? This action cannot be undone.",
+        "deleteRecurringNote": "Warning: This number is set to automatically recur. If you delete it, it will no longer recur.",
+        "actionsCount": "Actions Count",
+        "expandAll": "Expand All",
+        "collapseAll": "Collapse All",
+        "externalData": "External Data",
+        "externalDataSchedule": "Retrieve Daily At",
+        "externalDataScheduleRequired": "Schedule Required"
+    },
+    "childActionsTable": {
+        "descriptionHeader": "Description",
+        "statusHeader": "Status",
+        "priorityHeader": "Priority",
+        "ownerHeader": "Owner",
+        "dueHeader": "Due",
+        "categoryHeader": "Category",
+        "discussHeader": "Discuss",
+        "optionsHeader": "Options"
+    },
+    "numberChart": {
+        "period": "for FY {{ financialYear }} Q {{ quarter }}",
+        "subtitle": "Reporting Results for Week Ended",
+        "weekLabel": "FY{{ year }} Q{{ quarter }} Week {{ week }} ({{ date }})",
+        "result": "Weekly Result",
+        "average": "Average",
+        "targetAbove": "Target Above",
+        "targetBelow": "Target Below",
+        "includePrev": "Include Previous Quarter",
+        "includeNext": "Include Next Quarter"
+    },
+    "updateNumberResult": {
+        "result": "Result",
+        "autoWarning": "This number is set automatically. Any changes you make may be overridden by the system.",
+        "autoTooltip": "Automatically updated number",
+        "retrievalFailTooltip": "Automatic number retrieval failed."
+    },
+    "QuarterlyPlanningFinancialScreen": {
+        "fy": "FY",
+        "qtr": "QTR",
+        "q": "Q",
+        "financials": "Financials",
+        "setupFinancial": "Setup Financial",
+        "revenueTarget": "Revenue Target",
+        "revenueResult": "Revenue Result",
+        "profitTarget": "Profit Target",
+        "profitResult": "Profit Result",
+        "executionScoreTarget": "Execution Score Target",
+        "executionScoreTargetShouldBeLessThan100": "Execution Score Target should be less than 100",
+        "deleteFinancial": "Delete Financial",
+        "financial": "Financial",
+        "pleaseEnterAtLeastOneValue.": "Please enter at least one value."
+    },
+    "setupWorkCategory": {
+        "workCategories": "Work Categories",
+        "description": "Description",
+        "options": "Options",
+        "count": "Count",
+        "workCategory": "Work Category",
+        "descriptionRequired": "Description required",
+        "workCategoryDescription": "Work Category Description",
+        "workSubCategory": "Work Sub Category",
+        "subCategoryDescription": "Sub Category Description"
+    },
+    "ClientInstanceListScreen": {
+        "partnerName": "Partner Name",
+        "numberOfTeams": "Number of Teams",
+        "numberOfUsers": "Number of Users",
+        "numberOfGoals": "Number of Goals",
+        "numberOfActions": "Number of Actions",
+        "clientInstance": "Client Instance",
+        "nextPlanningDate": "Next Planning Date",
+        "departmentName": "Department Name"
+    },
+    "setupNotificationScreen": {
+        "notification": "Notification",
+        "filter": "Filter",
+        "notificationName": "Notification Name",
+        "enable/disable": "Enable/Disable",
+        "on": "ON",
+        "off": "OFF",
+        "NOTIFICATIONS": "NOTIFICATIONS"
+    },
+    "SetupUsersScreen": {
+        "createUser": "Create User",
+        "editUser": "Edit User",
+        "filter": "Filter",
+        "users": "Users",
+        "user": "User",
+        "role": "Role",
+        "homeCompany": "Home Company",
+        "status": "Status",
+        "active": "Active",
+        "suspended": "SUSPENDED",
+        "invitation": "Invitation",
+        "invited": "Invited",
+        "notInvited": "Not Invited",
+        "options": "Options",
+        "positionDescription": "Position Description",
+        "positionDescriptionIsRequired": "Position description is required",
+        "firstName": "First Name",
+        "firstNameIsRequired.": "First Name is required.",
+        "lastName": "Last Name",
+        "lastNameIsRequired": "Last Name is required",
+        "email": "Email",
+        "emailIsRequired": "Email is required",
+        "emailInvalid": "Email Invalid",
+        "domainInvalid": "Email domain does not match company domain",
+        "mobileNo": "Mobile No",
+        "pleaseEnterValidPhoneNumberInTheFormatOf:123-456-7890": "Please enter valid Phone Number in the format of: 123-456-7890",
+        "roles": "Roles",
+        "roleIsRequired": "Role is required",
+        "selectTeam": "Select Team",
+        "teams": "Teams",
+        "teamName": "Team Name",
+        "isPrimary": "Is Primary",
+        "primaryTeamRequired": "Please select a primary team",
+        "defaultLanguage": "Default Language",
+        "defaultTimezone": "Default Timezone",
+        "lineManager": "Line Manager",
+        "selectAUserOrEnterAnEmailAddress": "Select a user or enter an email address",
+        "password": "Password",
+        "passwordShouldContainMinimum8CharactersAndAcombinationOfUppercaseAndLowercaseLetterAndNumberAreRequired.": "Password should contain minimum 8 characters and a combination of uppercase and lowercase letter and number are required.",
+        "confirmPassword": "Confirm Password",
+        "pleaseConfirmYourPassword.": "Please confirm your password.",
+        "passwordsDoNotMatch..": "Passwords do not match..",
+        "profileImage": "Profile Image",
+        "upload": "UPLOAD",
+        "receiveUpdateReminders?": "Receive Update Reminders ?",
+        "permissions": "Permissions",
+        "invite": "Invite",
+        "selectAll": "Select All",
+        "allRead-Only": "All Read-Only",
+        "allRead-Write": "All Read-Write",
+        "r": "R",
+        "rw": "RW",
+        "emailRoleConflict": "A user with this email and role already exists",
+        "subscriptionIncreaseWarning": "The changes made to this user may cause an increase to your subscription.",
+        "subscriptionWarningDialog": {
+            "title": "Subscription Change",
+            "message": "The changes made to this user may cause an increase to your subscription."
+        },
+        "cannotReactivate": "This user cannot be activated. Please check they have a primary team set.",
+        "inviteUser": {
+            "emailSent": "Email sent successfully",
+            "invalidEmail": "Please insert valid email",
+            "alreadyInvited": "Already Invited"
+        }
+    },
+    "SetupIntegrationsScreen": {
+        "integrations": "Integrations",
+        "apiKeys": "API Keys",
+        "apiKey": "API Key",
+        "apiKeyDescription": "Description",
+        "apiKeyType": "Type",
+        "apiKeyTypes": {
+            "production": "Production",
+            "test": "Test"
+        },
+        "apiKeyRedacted": "Key",
+        "apiKeyExpires": "Expires",
+        "options": "Options",
+        "apiEdit": "Edit API Key",
+        "apiDelete": "Delete API Key",
+        "apiTypeInfo": "The <strong>Test API key</strong> functions in an identical manner to the <strong>Production API key</strong>, except that data is not persisted. The API access point is <a href='{{apiEndPoint}}'>{{apiEndPoint}}</a> and the associated API documentation is available at <a href='{{apiDocs}}'>api-docs</a>.",
+        "numbersInfo": "Listed below are the numbers that can currently be updated via the API. Each number that needs to be updated by the API must have the <strong>Update Method</strong> set to <strong>Automatic</strong>.",
+        "team": "Team",
+        "description": "Description",
+        "globalID": "Global ID",
+        "apiDeletePromptTitle": "Delete API Key?",
+        "apiDeletePromptDescription": "Are you sure you want to delete the API key?",
+        "apiDeleteConfirm": "Delete API Key",
+        "cancel": "Cancel",
+        "automaticUpdateNumbers": "Automatic Update Numbers"
+    },
+    "xeroConnection": {
+        "title": "Xero Integration",
+        "connectedText": "Workfacta is connected to Xero organisation <strong>{{ currentTenant }}</strong>.",
+        "confirmDisconnectTitle": "Disconnect from Xero?",
+        "confirmDisconnect": "Are you sure you want to disconnect from Xero? You can always reconnect later if required.",
+        "confirmDisconnectButton": "Disconnect",
+        "callBackFail": "Connection to Xero Unsuccessful",
+        "callbackSuccessful": "Connection to Xero Successful"
+    },
+    "SetupTeamsScreen": {
+        "teams": "Teams",
+        "teamName": "Team Name",
+        "description": "Description",
+        "weighting": "Weighting",
+        "options": "Options",
+        "department": "Department",
+        "teamMembers": "Team Members",
+        "meetingName": "Meeting Name",
+        "frequency": "Frequency",
+        "day": "Day",
+        "startTime": "Start Time",
+        "endTime": "End Time",
+        "invitees": "Invitees",
+        "reminders": "Reminders",
+        "remindersName": "Reminders Name",
+        "WithoutPrimaryUser": "Without Primary User",
+        "priorTime": "Prior Time",
+        "team": "Team",
+        "teamNameRequired": "Team name required",
+        "teamDescription": "Team Description",
+        "descriptionRequired": "Description required",
+        "weightingRequired": "Weighting required",
+        "weightingErrorMin": "Weighting must be at least {{min}}",
+        "weightingErrorMax": "Weighting must be at most {{max}}",
+        "weightingErrorPattern": "Please enter an integer",
+        "teamWeighting": "Team Weighting",
+        "noMeetingRequired": "No Meeting Required",
+        "meeting": "Meeting",
+        "meetingNameRequired": "Meeting name required",
+        "frequencyRequired": "Frequency required",
+        "meetingDay": "Meeting Day",
+        "dayRequired": "Day required",
+        "meetingDate": "Meeting Date",
+        "dateRequired": "Date required",
+        "selectMeetingInvitees": "Select Meeting Invitees",
+        "startTimeRequired": "Start Time required",
+        "endTimeRequired": "End Time required",
+        "endTimeMustBeGreater.": "End Time must be greater.",
+        "documentor": "Documentor",
+        "documenterIsRequired": "Documenter is required",
+        "convenor": "Convenor",
+        "convenorIsRequired": "Convenor is required",
+        "allowExtraMeetings": "Allow Extra Meetings",
+        "singleMeetingEmail": "Single Meeting Email",
+        "selectMeetingContributors": "Select Meeting Contributors",
+        "meetingReminder": "Meeting Reminder",
+        "reminderName": "Reminder Name",
+        "reminderNameIsRequired": "Reminder Name is required",
+        "priorDays": "Prior Days",
+        "priorHours": "Prior Hours",
+        "priorMinutes": "Prior Minutes Required",
+        "priorDaysRequired": "Prior Days",
+        "priorHoursRequired": "Prior Hours Required",
+        "priorMinutesRequired": "Prior Minutes Required",
+        "priorHourAndMinuteCannotBeZero": "Prior Days, Hours and Minutes can not be zero",
+        "subscriptionIncreaseWarning": "The changes made to this team may cause an increase to your subscription.",
+        "cannotRemoveSelfFromPrimaryTeam": "You cannot remove yourself from your primary team. Please change your primary team and try again.",
+        "subscriptionWarningDialog": {
+            "title": "Subscription Change",
+            "message": "The changes made to this team may cause an increase to your subscription."
+        },
+        "primaryUserWarningDialog": {
+            "title": "Primary User Removed",
+            "message": "One or more of the users removed from this team have this team set as their primary team. If these users are not a member of any other teams they may be deactivated. Are you sure you want to continue?"
+        },
+        "teamNameConflictError": "A team already exists with this name. Please update the name and try again.",
+        "saveAndAddMeeting": "Save and add meeting",
+        "saveWithoutMeeting": "Save without meeting",
+        "approvingTeams": "Approving Teams",
+        "membersRequired": "Please select one or more Team Members"
+    },
+    "approvalsScreen": {
+        "approvals": "Approvals",
+        "showAllApprovals": "Show All Approvals",
+        "actionsCount": "Actions Count",
+        "description": "Description",
+        "origin": "Origin",
+        "issueType": "Issue Type",
+        "priority": "Priority",
+        "referringTeam": "Referring Team",
+        "dateIdentified": "Date Identified",
+        "status": "Status",
+        "options": "Options"
+    },
+    "solutionApprovalActionType":{
+        "referredTo": "Referred To",
+        "approvedBy": "Approved By",
+        "rejectedBy": "Rejected By"
+    },
+    "editMeeting": {
+        "title": "Meeting",
+        "meetingName": "Meeting Name",
+        "meetingNameRequired": "Meeting Name is required",
+        "department": "Department",
+        "invitees": "Invitees",
+        "inviteesRequired": "Please select one or more invitees",
+        "invalidTime": "Invalid time",
+        "startTime": "Start Time",
+        "startTimeRequired": "Start Time is required",
+        "endTime": "End Time",
+        "endTimeRequired": "End Time is required",
+        "endTimeAfterStart": "End Time must be after Start Time",
+        "timeZone": "Time Zone",
+        "timeZoneRequired": "Time Zone is required",
+        "documentor":"Documentor",
+        "documentorRequired": "Documentor is required",
+        "convenor": "Convenor",
+        "convenorRequired": "Convenor is required",
+        "allowExtraMeetings": "Allow Extra Meetings",
+        "singleMeetingEmail": "Single Meeting Email",
+        "numbersChartsInMinutes": "Include Charts in Minutes",
+        "contributors": "Contributors"
+    },
+    "manageFeatures": {
+        "title": "Manage Features",
+        "overrideCount": "{{overrideCount}} override(s) ({{unusedCount}} unused)",
+        "removeAll": "Remove All Overrides",
+        "removeUnused": "Remove Unused Overrides",
+        "overridesFor": "Overrides for {{ featureName }}",
+        "delete": "Delete Override",
+        "undo": "Undo",
+        "archivedFeatures": "Archived Features",
+        "archiveFeature": "Archive Feature",
+        "unarchiveFeature": "Unarchive Feature",
+        "archivedFeaturesDescription": "{{length}} Archived Feature(s)",
+        "noFeatures": {
+            "title": "No Features",
+            "message": "There are no features configured. Please speak to your system administrator for more information."
+        },
+        "noArchives": {
+            "title": "No Archived Features",
+            "message": "No features are archived currently."
+        },
+        "globals": {
+            "globalFeature": "Global Feature"
+        }
+    },
+    "companyFeatures": {
+        "tabTitle": "Features",
+        "title": "Feature Management",
+        "informationText": "Feature Management allows a super admin to override which features are enabled at an enterprise level.\r\n\r\nThe value in brackets shows the global default state for any feature if no override exists - this can be overridden for the enterprise with the \"Enabled\" and \"Disabled\" radio buttons. Finally, an override can be removed by clicking \"Clear\".\r\n\r\n(Note that if no override exists, neither radio button will be selected.)"
+    },
+    "gettingStarted": {
+        "greeting": "Welcome to Workfacta, {{ name }}. Let's get started!",
+        "restart": "Restart",
+        "stepsDescription": "Complete these steps to get you up and running",
+        "stepsProgress": "{{step}}/{{total}} complete",
+        "getStarted": {
+            "title": "Get Started",
+            "users": "Setting up Users",
+            "team": "Setting up a Team",
+            "meeting": "Create a Meeting"
+        },
+        "goals": {
+            "title": "Create a Goal",
+            "setup": "Setting Quarterly Goals"
+        },
+        "actionsDiscussions": {
+            "title": "Create Actions and Discussions",
+            "actions": "Create an Action",
+            "discussionsCreate": "Create a Discussion",
+            "discussionsResolve": "Resolving a Discussion"
+        },
+        "numbers": {
+            "title": "Create a Number",
+            "setup": "Setting up a Number",
+            "charts": "Reading Number Charts"
+        },
+        "meeting": {
+            "title": "How to run a Meeting"
+        },
+        "dashboard": {
+            "title": "Customising your Dashboard"
+        },
+        "update": {
+            "title": "How to Update"
+        },
+        "teamPerformance": {
+            "title": "Graphing Team Performance"
+        }
+    },
+    "origin": {
+        "goal":"GOAL",
+        "action" : "ACTION",
+        "number": "NUMBER",
+        "solution": "SOLUTION",
+        "news": "NEWS",
+        "weeklyReport": "REPORT"
+    },
+    "priority": {
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High"
+    },
+    "itemToBeCreated": {
+        "action" : "Action",
+        "challenge" : "Challenge",
+        "discussion" : "Discussion",
+        "news" : "News",
+        "opportunity" : "Opportunity"
+    },
+    "NewsItemScreen": {
+        "news": "News",
+        "showAllNews": "Show All News",
+        "heading": "Heading",
+        "description": "Description",
+        "creator": "Creator",
+        "createdDate": "Created",
+        "options": "Options",
+        "createNewsItem": "Create News Item",
+        "editNewsItem": "Edit News Item",
+        "creatorRequired": "Creator required",
+        "headingRequired": "Heading required",
+        "descriptionRequired": "Description required",
+        "action": "Action",
+        "discuss": "Discuss",
+        "newsSummary": "News Summary",
+        "noted": "Noted",
+        "owner": "Owner",
+        "confidential": "Confidential",
+        "Created": "Created",
+        "team": "Team",
+        "teamRequired": "Team Required",
+        "validFormat" : "Please enter valid format",
+        "links": "Links"
+    },
+    "paymentManagementScreen": {
+        "title": "Payment Management",
+        "loadFailed": "An unexpected error occcurred loading the list of enterprises. Click here to try again.",
+        "noData": "No enterprises were found. Click here to try again.",
+
+        "teamCount": "{{ paidTeams }} Payable Teams ({{ totalTeams }} Total)",
+        "userCount": "{{ paidUsers }} Full Users ({{ totalUsers }} Total)",
+
+        "disabled": "Disabled",
+        "someDisabled": "Some Disabled",
+        "subscriptionExceeded": "Subscription Exceeded",
+        "noCurrentSubscription": "No Current Subscription",
+        "noAccess": "No Access",
+
+        "enterpriseTitle": "Manage Enterprise Payment",
+        "enterpriseNotFound": "The selected enterprise was not found. Please try again.",
+        "enterpriseLoadFailed": "An unexpected error occcurred loading the enterprises details. Click here to try again.",
+
+        "payment": "Payment",
+        "paymentType": "Payment Type",
+
+        "subscription": "Subscription",
+        "expires": "Expires: {{ date }}",
+        "stripeCustomer": "Stripe Customer",
+        "stripeSubcription": "Stripe Subscription",
+        "notActive": "No Active Subscription",
+
+        "subscriptionRecommendation": "Subscription Recommendation",
+
+        "limits": "Limits",
+
+        "subscriptionTable": {
+            "type": "Type",
+            "name": "Name",
+            "quantity": "Quantity",
+            "teamSize": "Team Size",
+            "teamSizeNone": "(None)",
+            "noData": "No subscription products found"
+        },
+
+        "usersTable": {
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "role": "Role",
+            "company": "Home Company",
+            "team": "Home Team",
+            "noData": "No users found"
+        },
+
+        "teamsTable": {
+            "free": "Free",
+            "name": "Name",
+            "users": "Users",
+            "recommendedSize": "Recommended Size",
+            "noData": "No teams found"
+        }
+    },
+    "HelpScreen": {
+        "helpPage": "Help Page"
+    },
+    "SetupAccountManagementScreen": {
+        "accountManagement": "Account Management"
+    },
+    "stripeAccountPopup": {
+        "title": "Partner Payments",
+        "created": "We need some details before you can start accepting payments. Click here to continue.",
+        "requirementsDue": "We need some more details so that you can continue accepting payments. Click here to update."
+    },
+    "NoRecordsFound": {
+        "noRecordsFound!": "No Records Found!"
+    },
+    "periodSelector": {
+        "year": "FYear",
+        "quarter": "Qtr",
+        "week": "Week",
+        "prev": "Previous",
+        "next": "Next",
+        "reportingWeekEnded": "Reporting week ended {{ date }}"
+    },
+    "fileTypeWarning": {
+        "notImage": "Please upload image file only, with extension jpg, jpeg, png, gif, svg, bmp !",
+        "notDocument": "Please upload file only, with extension pdf, docx doc, xls, xlsx, pptx, pptm, ppt, csv !",
+        "notImageOrDocument": "Please upload file only, with extension pdf, docx doc, xls, xlsx, pptx, pptm, ppt, csv, jpg, jpeg, png, gif, svg !"
+    },
+    "externalData": {
+        "xeroCashInBankTotalRetriever": "Xero - Total Cash in Bank",
+        "xeroCashInBankAccountRetriever": "Xero - Cash in Bank Account",
+        "xeroBankAccount": "Bank Account",
+        "xeroBankAccountRequired": "Bank Account Required",
+        "loadingText": "Loading Bank Accounts"
+    },
+    "Home": "Home",
+    "Start": "Start",
+    "Update": "Update",
+    "opportunities": "Opportunities",
+    "Challenges": "Challenges",
+    "Actions": "Actions",
+    "New Meeting": "New Meeting",
+    "Approvals": "Approvals",
+    "Separator Line": "Separator Line",
+    "Team Performance": "Team Performance",
+    "Company Performance": "Company Performance",
+    "Enterprise Performance": "Enterprise Performance",
+    "Enterprise": "Enterprise",
+    "Team": "Team",
+    "Performance": "Performance",
+    "Meeting Archive": "Meeting Archive",
+    "Annual Planning": "Annual Planning",
+    "Mission": "Mission",
+    "Values": "Values",
+    "Vision Elements": "Vision Elements",
+    "Projections": "Projections",
+    "Vision Statement": "Vision Statement",
+    "Visions CSF": "Visions CSF",
+    "Staff Resources": "Staff Resources",
+    "RESOURCES (NON STAFF)": "RESOURCES (NON STAFF)",
+    "Measures of Success": "Measures of Success",
+    "Foundation Principles": "Foundation Principles",
+    "Goals and Strategies": "Goals and Strategies",
+    "Business Goals": "Business Goals",
+    "Planning Memorandum": "Planning Memorandum",
+    "Business Plan": "Business Plan",
+    "Execution Plan Report": "Execution Plan Report",
+    "Dates": "Dates",
+    "Market Strategy": "Market Strategy",
+    "Quarterly Planning": "Quarterly Planning",
+    "Quarterly Targets": "Quarterly Targets",
+    "Goals": "Goals",
+    "Numbers": "Numbers",
+    "Issues": "Issues",
+    "Financial": "Financial",
+    "Setup": "Setup",
+    "Create": "Create",
+    "Score Dashboard": "Score Dashboard",
+    "Clients": "Clients",
+    "Help": "Help and Feedback",
+    "Save": "Save",
+    "Success!": "Success!",
+    "Error!": "Error!",
+    "Warning!": "Warning!",
+    "YES": "YES",
+    "Number Status": "Number Status",
+    "Goals Status": "Goals Status",
+    "Open Opportunities": "Open Opportunities",
+    "Open Challenges": "Open Challenges",
+    "Overdue Actions": "Overdue Actions",
+    "Actions Due This Week": "Actions Due This Week",
+    "All Open Actions": "All Open Actions",
+    "Upcoming Actions": "Upcoming Actions",
+    "My Week - Enterprise": "My Week - Enterprise",
+    "My Week": "My Week",
+    "Description": "Description",
+    "Owner": "Owner",
+    "Category": "Category",
+    "Framework Category": "Framework Category",
+    "Framework Sub Category": "Framework Sub Category",
+    "Sub Category": "Sub Category",
+    "Click here to Enter Notes": "Click here to Enter Notes",
+    "Click here to Enter & Visit Links": "Click here to Enter & Visit Links",
+    "Click here to Upload & View Documents": "Click here to Upload & View Documents",
+    "Logout": "Logout",
+    "Success": "Success",
+    "error": "error",
+    "Error": "Error",
+    "Warning": "Warning",
+    "There must be a team. Can not add item without Team": "There must be a team. Can not add item without Team",
+    "Status Updated.": "Status Updated.",
+    "Meeting started successfully.": "Meeting started successfully.",
+    "Meeting Started Error": "Meeting Started Error",
+    "There should be at least one attendee to start meeting, Please update.": "There should be at least one attendee to start meeting, Please update.",
+    "Meeting successfully closed": "Meeting successfully closed",
+    "Minutes of Meeting Sent.": "Minutes of Meeting Sent.",
+    "Minutes of Meeting not sent": "Minutes of Meeting not sent",
+    "Action added.": "Action added.",
+    "Issue added.": "Issue added.",
+    "Status": "Status",
+    "Due Date": "Due Date",
+    "Priority": "Priority",
+    "Updater": "Updater",
+    "Result": "Result",
+    "Report": "Report",
+    "AddReport": "Add Report",
+    "Target": "Target",
+    "Department": "Department",
+    "Updated": "Updated",
+    "Comment": "Comment",
+    "Mon": "Mon",
+    "Tue": "Tue",
+    "Wed": "Wed",
+    "Thu": "Thu",
+    "Fri": "Fri",
+    "Sat": "Sat",
+    "Sun": "Sun",
+    "feedbackTooltip": "Click here to send Suggestion or Problem",
+    "Issue": "Issue",
+    "Action": "Action",
+    "Email Details": "Email Details",
+    "Reporting Results for Week Ended": "Reporting Results for Week Ended",
+    "Chart Type": "Chart Type",
+    "Agreed": "Agreed",
+    "Welcome": "Welcome",
+    "success": "success",
+    "Updates to your Quarterly Goals and Numbers are entered in this section. This allows the business to know if it is on target and take any corrective actions on a timely basis, if required": "Updates to your Quarterly Goals and Numbers are entered in this section. This allows the business to know if it is on target and take any corrective actions on a timely basis, if required.",
+    "Actions are priority known or agreed tasks to be undertaken.": "Actions are priority known or agreed tasks to be undertaken.",
+    "Issues are either priority challenges or opportunities the company has which the team must decide how to best address. Once a decision is agreed new Actions will be created at that time.": "Issues are either priority challenges or opportunities the company has which the team must decide how to best address. Once a decision is agreed new Actions will be created at that time.",
+    "Results": "Results",
+    "Execution": "Execution",
+    "Activity": "Activity",
+    "Team Discipline": "Team Discipline",
+    "Updates on time ": "Updates on time ",
+    "Meeting Start on Time": "Meeting Start on Time",
+    "Meeting Finish on Time ": "Meeting Finish on Time ",
+    "Meeting Attendance": "Meeting Attendance",
+    "Teamwork": "Teamwork",
+    "Problem Solving": "Problem Solving",
+    "Meeting": "Meeting",
+    "Weekly Execution Score": "Weekly Execution Score",
+    "Please Load Dashboard!": "Please Load Dashboard!",
+    "Loading Graph Data...": "Loading Graph Data...",
+    "Loading Calculations...": "Loading Calculations...",
+    "Average": "Average",
+    "Execution Score": "Execution Score",
+    "Weeks": "Weeks",
+    "Score": "Score",
+    "Weekly Company & Teams Execution Score": "Weekly Company & Teams Execution Score",
+    "Draft": "Draft",
+    "Committed": "Committed",
+    "projections": "Projections",
+    "Vision": "Vision",
+    "Vision Explanation": "Vision Explanation",
+    "Purpose/Passion": "Purpose / Passion",
+    "Why": "Why",
+    "Visions Critical Success Factors": "Visions Critical Success Factors",
+    "measures of Success": "Measures of Success",
+    "Value 1 Title": "Value 1 Title",
+    "Value 1 Description": "Value 1 Description",
+    "Value 1 Explained": "Value 1 Explained",
+    "Value 2 Title": "Value 2 Title",
+    "Value 2 Description": "Value 2 Description",
+    "Value 2 Explained": "Value 2 Explained",
+    "Value 3 Title": "Value 3 Title",
+    "Value 3 Description": "Value 3 Description",
+    "Value 3 Explained": "Value 3 Explained",
+    "Value": "Value",
+    "Title": "Title",
+    "Explained": "Explained",
+    "Measure Section": "Measure Section",
+    "Creator": "Creator",
+    "Tactic": "Tactic",
+    "Goal": "Goal",
+    "Plan": "Plan",
+    "ReportsAndNotes": "Reports & Notes",
+    "Category A": "Category A",
+    "Category B": "Category B",
+    "Date": "Date",
+    "Save Changes": "Save Changes",
+    "Company": "Company",
+    "Niche": "Niche",
+    "Guarantee": "Guarantee",
+    "3 Key Features": "3 Key Features",
+    "Product Promise": "Product/Service Promise",
+    "Key Benefits": "Key Benefits",
+    "3 UNI Question": "3 UNI Question",
+    "Elevator Pitch": "Elevator Pitch",
+    "Setup Goal": "Setup Goal",
+    "Include Prior Quarters": "Include Prior Quarters",
+    "IS TPNS needed": "TPNS needed",
+    "Number": "Number",
+    "Edit": "Edit",
+    "Copy": "Copy",
+    "Delete": "Delete",
+    "weeklyReport": "Report",
+    "Financial updated successfully": "Financial updated successfully",
+    "There will only ever be 1 set of 4 field entries per quarter.": "There will only ever be 1 set of 4 field entries per quarter.",
+    "Program": "Program",
+    "Annual program dates": "Annual program dates",
+    "Venue Confirmed": "Venue Confirmed",
+    "Participants Confirmed": "Participants Confirmed",
+    "Team Confirmation": "Team Confirmation",
+    "Results Confirmations": "Results Confirmations",
+    "Activity Confirmations": "Activity Confirmations",
+    "Inputs on Time": "Inputs on Time",
+    "Meeting Finish on Time": "Meeting Finish on Time",
+    "TeamWork": "TeamWork",
+    "Issue Solving": "Issue Solving",
+    "Results (QR)": "Results (QR)",
+    "Revenue": "Revenue",
+    "Profit ": "Profit",
+    "RESULTS": "RESULTS",
+    "Communication": "Communication",
+    "No Planning Date Set": "No Planning Date Set",
+    "notifications": "notifications",
+    "Create User": "Create User",
+    "Edit User": "Edit User",
+    "Reset Password": "Reset Password",
+    "Advisor": "Advisor",
+    "User": "User",
+    "Associate": "Associate",
+    "Admin": "Admin",
+    "Super Admin": "Super Admin",
+    "Enterprise Admin": "Enterprise Admin",
+    "SuperAdmin": "Super Admin",
+    "EnterpriseAdmin": "Enterprise Admin",
+    "Done": "Done",
+    "Opportunities": "Opportunities",
+    "User Status Changed": "User Status Changed",
+    "Users": "Users",
+    "Year Status Changed": "Year Status Changed",
+    "Reminder": "Reminder",
+    "Teams": "Teams",
+    "Reminder added successfully.": "Reminder added successfully.",
+    "Reminders updated successfully.": "Reminders updated successfully.",
+    "Reminder already exist.": "Reminder already exist.",
+    "Reminder deleted successfully.": "Reminder deleted successfully.",
+    "A password reset email has been sent to this user.": "A password reset email has been sent to this user.",
+    "An unexpected error occurred. Please try again later.": "An unexpected error occurred. Please try again later.",
+    "Email sent successfully": "Email sent successfully",
+    "Please insert valid email": "Please insert valid email",
+    "Already Invited": "Already Invited",
+    "Please select User First": "Please select User First",
+    "warning": "warning",
+    "Work Category": "Work Category",
+    "Sub-Category": "Sub-Category",
+    "SuccessFully Updated": "SuccessFully Updated",
+    "Continue": "Continue",
+    "Cancel": "Cancel",
+    "Revoke Key?": "Revoke Key?",
+    "Are you sure you want to revoke the API key?": "Are you sure you want to revoke the API key?",
+    "Revoke Key": "Revoke Key",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "clear": "Clear",
+    "refresh": "Refresh",
+    "expandItem": "Expand {{ item }}",
+    "collapseItem": "Collapse {{ item }}",
+    "SetupStaffResources": "Setup Staff Resources",
+    "SetupResourcesPlan": "Setup Resources Plan",
+    "Workfacta": "Workfacta",
+    "back": "Back",
+    "next": "Next",
+    "skip": "Skip",
+    "submit": "Submit",
+    "Retry": "Retry"
+}

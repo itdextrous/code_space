@@ -1,0 +1,86 @@
+@import '~@angular/material/theming';
+
+/**
+ * Palette generated using https://mcg.mbitson.com/#!?mcgpalette0=%233cb4e5
+ */
+
+.wf-theme {
+    $md-wf-blue: (
+        50 : #e8f6fc,
+        100 : #c5e9f7,
+        200 : #9edaf2,
+        300 : #77cbed,
+        400 : #59bfe9,
+        500 : #3cb4e5,
+        600 : #36ade2,
+        700 : #2ea4de,
+        800 : #279cda,
+        900 : #1a8cd3,
+        A100 : #ffffff,
+        A200 : #d4edff,
+        A400 : #a1d8ff,
+        A700 : #87ceff,
+        contrast: (
+            50 : #000000,
+            100 : #000000,
+            200 : #000000,
+            300 : #000000,
+            400 : #000000,
+            500 : #ffffff,
+            600 : #ffffff,
+            700 : #ffffff,
+            800 : #ffffff,
+            900 : #ffffff,
+            A100 : #000000,
+            A200 : #000000,
+            A400 : #000000,
+            A700 : #000000,
+        )
+    );
+
+    $primary: mat-palette($md-wf-blue, 500);
+    $accent: mat-palette($mat-indigo, 500);
+    $warn: mat-palette($mat-pink, 500);
+    $theme: mat-light-theme($primary, $accent, $warn);
+
+    @include angular-material-theme($theme);
+
+    mat-form-field {
+        color: rgba(0, 0, 0, 0.87);
+        font-weight: 500;
+    }
+
+    $field-radius: 12px;
+
+    .mat-form-field-appearance-outline {
+        .mat-form-field-outline-start {
+            border-radius: $field-radius 0 0 $field-radius;
+            min-width: $field-radius;
+        }
+    
+        .mat-form-field-outline-end {
+            border-radius: 0 $field-radius $field-radius 0;
+        }
+    }
+    .mat-form-field-appearance-fill {
+        .mat-form-field-flex {
+            border-radius: $field-radius;
+        }
+        .mat-form-field-underline {
+            display: none;
+        }
+    }
+
+    .mat-checkbox label {
+        font-weight: normal;
+    }
+
+    .mat-form-field-appearance-fill.no-label {
+        .mat-form-field-flex {
+            padding: 0 0.75em;
+        }
+        .mat-select-arrow-wrapper {
+            transform: translateY(-20%);
+        }
+    }
+}
