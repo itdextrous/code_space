@@ -1,0 +1,34 @@
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<dynamic>
+@{
+	var searchLabel = Umbraco.GetDictionaryValue("Search Label");
+	var nameLabel = Umbraco.GetDictionaryValue("Name");
+	var titleLabel = Umbraco.GetDictionaryValue("Title");
+	var emptySearch = Umbraco.GetDictionaryValue("Empty Search");
+	
+
+}
+<div class="section" ng-controller="Naviair.AimTreeViewController">
+	<div class="ng-hide" ng-hide="loading">
+		<form novalidate class="form-horizontal">
+			<div class="form-group">
+				<label for="inputSearch" class="col-md-1 control-label">@searchLabel</label>
+				@* <label for="inputSearch" class="col-md-1 control-label">Search</label> *@
+				<div class="col-md-11">
+					<input ng-model="keywords" ng-change="search()" type="text" class="form-control" id="inputSearch">
+				</div>
+			</div>
+		</form>
+		<tree-grid ng-hide="searching" icon-leaf="naviair-fonts-file-pdf" icon-expand="icon-icomoon-folder-add"
+				   template-url="/templates/treegrid.html"
+				 @*   icon-collapse="icon-icomoon-folder-remove" tree-data="tree_data" expand-on="expanding_property" col-defs="col_defs" on-open="my_tree_handler(branch, row)" cols-display-name="{name:'Name',title:'Title'}" *@
+				    icon-collapse="icon-icomoon-folder-remove" tree-data="tree_data" expand-on="expanding_property" col-defs="col_defs" on-open="my_tree_handler(branch, row)" cols-display-name="{name:'@nameLabel',title:'@titleLabel'}">
+			   </tree-grid>
+	</div>
+	<div ng-hide="!searching && !loading" class="naviair-fonts-spin3 icon-spin3-naviair animate-spin text-center"></div>
+	<button id="seemore" class="ng-hide btn btn-block btn-default btn-small botton-15" ng-hide="!showSeeMore" ng-click="loadMore()" type="button">@Model.seeMoreText <span id="seemore-spiner"></span></button>
+	@* <p class="ng-hide" ng-hide="tree_data.length > 0 || searching || loading">@Model.emptySearch</p> *@
+	<p class="ng-hide" ng-hide="tree_data.length > 0 || searching || loading">@emptySearch</p>
+
+
+	
+</div>
